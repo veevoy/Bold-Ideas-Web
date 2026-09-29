@@ -2,17 +2,17 @@
 
 Live URL: https://bold-ideas-client-preview.twenntyonee.chatgpt.site
 
-The user explicitly requested publication of the latest working version on 29 September 2026, including Kinable background blur and media optimisation, and upload to https://github.com/ulrychkristian/Bold-Ideas-Web. Version 4 replaces the earlier snapshot on the same domain and includes the latest approved case galleries, LPH Donate/sea hero, service walkthrough and mobile scroll-video fixes. **Do not push new source, save another hosted version or redeploy without a new explicit publication request.** Anyone with the URL can view this preview; the existing public audience was preserved. No automatic publishing was enabled.
+The user explicitly requested publication of the latest working version on 29 September 2026, including Kinable background blur and media optimisation, and upload to https://github.com/ulrychkristian/Bold-Ideas-Web. The user subsequently explicitly approved publishing the mobile-video delivery repair and uploading it to GitHub. Version 6 includes that repair together with the latest approved case galleries, LPH Donate/sea hero, service walkthrough and responsive media. **Do not push new source, save another hosted version or redeploy without a new explicit publication request.** Anyone with the URL can view this preview; the existing public audience was preserved. No automatic publishing was enabled.
 
 ## Published identity
 
 - Site: `appgprj_6ab635feab94819199180c35e62adf7e`
-- Saved version: `appgprj_6ab635feab94819199180c35e62adf7e~appgver_ba6e5f9f67388191bb3f2b9dbe374f7d` (version 4)
-- Source commit: `e48caad62265a3e3d002bc9f614f5cc181427f5c`
-- Deployment: `appgdep_6abbc8baed208191b802dbde5ff54dd6`
-- Native deployment status: `succeeded`, 2026-09-29 14:19:02 UTC.
+- Saved version: `appgprj_6ab635feab94819199180c35e62adf7e~appgver_73daa08020c08191b5a48e0492ed28e7` (version 6)
+- Source commit: `0f4d26b113c7f3040d89cff9e1201ee5e3b0bb19`
+- Deployment: `appgdep_6abbd0a84db081919ccfd17203f64d08`
+- Native deployment status: `succeeded`, 2026-09-29 14:52:48 UTC.
 - Isolated source checkout: `../handoff/client-preview-site/`
-- Deployment archive: `../handoff/bold-ideas-client-preview-2026-09-29-optimized-sites.tar.gz`
+- Deployment archive: `../handoff/bold-ideas-client-preview-2026-09-29-mobile-routing-sites.tar.gz`
 
 ## Snapshot and media integrity
 
@@ -28,10 +28,10 @@ The adapter belongs only to the separate hosting checkout, under `hosting/` and 
 ## Verification
 
 - Application TypeScript check and production build passed.
-- All 32 application/content/Sites/route/navigation/scroll-video tests passed; content and asset validation passed for four projects and 147 public assets. Full npm audit reported zero vulnerabilities.
-- 11 additional media-delivery tests passed: full-file byte identity, exact seeks across stored parts, HEAD, conditional requests, invalid ranges and deep-page fallback.
+- All 40 application/content/Sites/route/navigation/scroll-video tests passed; content and asset validation passed for four projects and 147 public assets. Full npm audit reported zero vulnerabilities.
+- 13 additional media-delivery tests passed: full-file byte identity, exact seeks across stored parts, HEAD, conditional requests, invalid ranges and deep-page fallback.
 - Native save and publication succeeded; the returned live URL is recorded above.
-- Production-preview desktop/mobile verification covered Kinable blur, sharp foreground, smaller responsive image selection and LPH gallery loading. See VERIFICATION.md for measured file savings and test limitations. Native publication succeeded; no further live-browser QA was required for this release.
+- Production-preview desktop/mobile verification covered Kinable blur, sharp foreground, smaller responsive image selection and LPH gallery loading. See VERIFICATION.md for measured file savings and test limitations. Native publication succeeded. For the delivery repair, six actual HTTP range probes (beginning, middle and end of both mobile MP4s) returned 206, correct Content-Range and byte-identical payloads. Physical iPhone/Safari playback remains for the user to confirm.
 
 ## Routing correction — 29 September 2026
 
@@ -39,7 +39,19 @@ The user reported that published links returned to the homepage. Live `/case-stu
 
 For a future **explicitly authorised** update, rebuild from the requested source, preserve lossless media delivery and use the same Site identity. Never treat the presence of `.openai/hosting.json` as continuing permission to publish.
 
+## Mobile video delivery repair — 29 September 2026
+
+Both mobile MP4 URLs originally ignored Range requests and returned whole files with HTTP 200. The source Worker now repairs range responses from asset bindings that do not implement them. Live version 5 then exposed a second issue: existing static assets bypassed that Worker entirely.
+
+The hosting build now calls `packageMobileScrollMedia('dist/client')` from `prototype/scripts/package-mobile-scroll-media.mjs` in its `scripts/copy-sites-build.mjs`, after copying the regular build and desktop media parts. Its returned manifest is merged into the existing media manifest before generating the deployed Worker. This moves only the deployed mobile MP4s into internal content-addressed parts, so their unchanged public URLs reach the range-enabled adapter. Keep this step when synchronising future source updates. Source MP4s and ordinary static build outputs remain complete. No film bytes, dimensions, frame rates or scroll mappings changed.
+
+Version 6 live verification: both files returned exactly 2 bytes for bytes=0-1 and exactly 1,024 bytes for middle/end probes, each HTTP 206 with the correct total file size in Content-Range. These checks resolve the confirmed server delivery fault; they do not replace a physical-device visual test.
+
 ## Previous publication
+
+Version 5 added the regular Worker range handling but was superseded after live probing exposed direct-asset bypass: `appgprj_6ab635feab94819199180c35e62adf7e~appgver_2b936b9fcd488191b0897e2f937d5d29`, source `3c178225ace829106d43f2b43465ad9fc614b1e9`, deployment `appgdep_6abbcf3b24a0819192a2184f20f6bb0a`. Archive: `../handoff/bold-ideas-client-preview-2026-09-29-mobile-range-sites.tar.gz`.
+
+Version 4 published the media-optimised website: `appgprj_6ab635feab94819199180c35e62adf7e~appgver_ba6e5f9f67388191bb3f2b9dbe374f7d`, source `e48caad62265a3e3d002bc9f614f5cc181427f5c`, deployment `appgdep_6abbc8baed208191b802dbde5ff54dd6` (succeeded at 2026-09-29 14:19:02 UTC). Archive: `../handoff/bold-ideas-client-preview-2026-09-29-optimized-sites.tar.gz`.
 
 Version 3 repaired hosted navigation: `appgprj_6ab635feab94819199180c35e62adf7e~appgver_043b3e605fd08191a033f829ca68ef7c`, source `dddcaf8f7ed2a23bd6d81fa1a0d1d6d1fee4349b`, deployment `appgdep_6abb8a0060b48191b944aa1c82416be8` (succeeded at 2026-09-29 09:51:12 UTC). Archive: `../handoff/bold-ideas-client-preview-2026-09-29-routing-sites.tar.gz`. Its live navigation was verified from homepage through case index, Kinable and Services.
 
