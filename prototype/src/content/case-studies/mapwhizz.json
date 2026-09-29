@@ -1,0 +1,239 @@
+{
+  "slug": "mapwhizz",
+  "order": 3,
+  "published": true,
+  "name": "Mapwhizz",
+  "headline": [
+    "From a stalled launch",
+    "to a live product."
+  ],
+  "summary": "A UK location-intelligence company was trapped in an over-budget, undelivered build. An honest audit, a stabilised core and a rebuilt frontend got the product into the market.",
+  "sector": "Location intelligence",
+  "serviceId": "product-rescue",
+  "scope": "Technical audit, backend stabilisation & frontend replacement",
+  "image": {
+    "src": "/images/cases/mapwhizz-report-detail-figma.webp",
+    "width": 1512,
+    "height": 1068,
+    "alt": "Mapwhizz travel time analysis report detail, showing recommended office and commute comparisons.",
+    "credit": {
+      "label": "Client-supplied Figma design",
+      "href": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/?node-id=970-9548"
+    },
+    "presentation": "screen"
+  },
+  "challenge": {
+    "title": "Rescuing a stalled launch.",
+    "paragraphs": [
+      "Mapwhizz had a strong proposition, but its chosen development partner could not deliver. The project was several times over the original budget, communication had broken down, and both halves of the software were buried in technical debt before the product had launched.",
+      "Walking away was not an option. The team needed someone to tell them the truth and find a way to market."
+    ]
+  },
+  "timeline": [
+    {
+      "title": "An honest audit",
+      "description": "We assessed what could be saved and identified what needed replacing to reach launch."
+    },
+    {
+      "title": "Stabilisation and launch",
+      "description": "A steadier core and a new frontend got the product into live use."
+    },
+    {
+      "title": "Rebuilding for scale",
+      "description": "With the product serving customers, work began on the remaining legacy backend."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Diagnosis: an honest audit.",
+      "paragraphs": [
+        "We audited both halves of the application to see what could be saved. Instead of the ground-up rewrite that would have killed the budget and delayed launch indefinitely, we gave a straight recommendation: repair the critical core just enough to ship, and replace the broken part entirely."
+      ],
+      "showcases": [
+        {
+          "label": "Detailed postcode analysis",
+          "background": "#F8F3EC",
+          "layout": "artwork",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/mapwhizz-case-postcodes.webp",
+                "width": 2050,
+                "height": 1318,
+                "alt": "Detailed postcode analysis comparing driving, public transport and cycling, on the user-designed sky background.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-9698"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 2050,
+                "height": 1318
+              }
+            }
+          ]
+        },
+        {
+          "label": "Comparing the impact of each office location",
+          "background": "#F8F3EC",
+          "layout": "artwork",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/mapwhizz-case-commute.webp",
+                "width": 2050,
+                "height": 1318,
+                "alt": "Who benefits from each office location and commute estimates by transport mode, in the user-designed blue-grey composition.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-9471"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 2050,
+                "height": 1318
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stabilisation: getting the product over the line.",
+      "paragraphs": [
+        "We separated and steadied the core logic, cut through the worst of the debt, and built the whole user-facing half from scratch. That got around the previous supplier’s bottlenecks and pushed the product into live use."
+      ],
+      "showcases": [
+        {
+          "label": "The Mapwhizz company dashboard",
+          "background": "#F8F3EC",
+          "layout": "artwork",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/mapwhizz-case-company.webp",
+                "width": 2050,
+                "height": 1318,
+                "alt": "Mapwhizz company dashboard with office details, available reports and credits, on a mint background.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-9701"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 2050,
+                "height": 1318
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scale, when the business was ready.",
+      "paragraphs": [
+        "With the product live, stable and serving customers, Mapwhizz avoided a huge upfront rebuild. With revenue coming in, we moved on to the planned next phase: rebuilding what remained of the legacy system.",
+        "The screens below show the platform’s travel-time analysis and commute comparisons."
+      ],
+      "showcases": [
+        {
+          "label": "Analysis options and report results",
+          "background": "#F8F3EC",
+          "layout": "artwork-pair",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/mapwhizz-case-study-types.webp",
+                "width": 964,
+                "height": 1318,
+                "alt": "Proposed locations analysis and employee travel-time analysis cards, in the original user-designed composition.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-10057"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 964,
+                "height": 1318
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/mapwhizz-case-results.webp",
+                "width": 964,
+                "height": 1318,
+                "alt": "Recommended office, commute change and employee-impact cards in the original user-designed composition. Example product figures, not case-study outcome metrics.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-10061"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 964,
+                "height": 1318
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outcome": {
+    "summary": "The product is now live, stable, and serving users.",
+    "deliverables": [
+      "Technical audit",
+      "Stabilised backend",
+      "New frontend in production"
+    ],
+    "next": "With the product in live use, work moved on to the planned rebuild of the remaining legacy backend for long-term scale.",
+    "paragraphs": [
+      "Rebuilding the user-facing half first and phasing the rest into a later stage saved the launch, protected the budget, and set the business up to grow."
+    ]
+  },
+  "testimonialId": "mapwhizz",
+  "hero": {
+    "background": {
+      "src": "/images/cases/mapwhizz-architecture-stock.webp",
+      "alt": "A simple pale building corner against blue sky.",
+      "width": 2000,
+      "height": 3000,
+      "position": "50% 35%",
+      "illustrative": true,
+      "credit": {
+        "label": "Tandem X Visuals / Unsplash",
+        "href": "https://unsplash.com/photos/a-white-building-with-a-blue-sky-in-the-background-KqwgBSp9bY0"
+      }
+    },
+    "screen": {
+      "src": "/images/cases/mapwhizz-report-detail-figma.webp",
+      "width": 1512,
+      "height": 1068,
+      "alt": "Mapwhizz travel time analysis report detail, showing recommended office and commute comparisons.",
+      "credit": {
+        "label": "Client-supplied Figma design",
+        "href": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/?node-id=970-9548"
+      },
+      "presentation": "screen"
+    }
+  },
+  "thumbnailScreen": {
+    "src": "/images/cases/mapwhizz-thumbnail-graphs.webp",
+    "width": 1264,
+    "height": 1129,
+    "alt": "Mapwhizz report comparing commute changes and travel times by driving, public transport and cycling.",
+    "credit": {
+      "label": "Client-supplied Figma design",
+      "href": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-9472"
+    }
+  }
+}

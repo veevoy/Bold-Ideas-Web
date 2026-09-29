@@ -1,0 +1,250 @@
+{
+  "slug": "kinable",
+  "order": 1,
+  "published": true,
+  "name": "Kinable",
+  "headline": [
+    "Knowing what to build,",
+    "before building it."
+  ],
+  "summary": "A mobile app for families caring for someone living with dementia. A specification, a working prototype and a realistic roadmap gave the team the certainty to begin development.",
+  "sector": "Wellbeing & family care",
+  "serviceId": "proof-of-product",
+  "scope": "Business and technical specification, prototyping & delivery planning",
+  "image": {
+    "src": "/images/cases/kinable-onboarding.webp",
+    "alt": "Kinable working mobile build: care onboarding with an older man at a doorway.",
+    "width": 1170,
+    "height": 2425,
+    "presentation": "screen"
+  },
+  "challenge": {
+    "title": "Certainty before committing to a full build.",
+    "paragraphs": [
+      "Before committing to a full build, the Kinable team needed to know exactly what the first version should do, what it would cost, and how long it would take — with enough certainty to start."
+    ]
+  },
+  "timeline": [
+    {
+      "title": "Business and technical specification",
+      "description": "One shared document defining what the app does, who it is for and how it would be built."
+    },
+    {
+      "title": "An AI-built prototype",
+      "description": "A working, clickable mobile prototype to judge the product by using it."
+    },
+    {
+      "title": "Estimate and roadmap",
+      "description": "A realistic cost and phased plan, set out before committing to the build."
+    },
+    {
+      "title": "Now in development",
+      "description": "The build is under way, with the specification, prototype and roadmap holding through development."
+    }
+  ],
+  "approach": [
+    {
+      "title": "One specification, shared by business and technology.",
+      "paragraphs": [
+        "We created one document covering what the app does, who it is for and how it would be built — the business logic and the technical decisions together, not in separate silos."
+      ],
+      "showcases": [
+        {
+          "label": "Daily care and care plans in matching Kinable phone frames",
+          "background": "#E4D5F6",
+          "layout": "phones",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/kinable-daily-care-redacted.webp",
+                "alt": "Kinable daily care: profile, tasks, wellbeing check-in and upcoming activity, with Home selected in the navigation.",
+                "width": 1170,
+                "height": 2529,
+                "presentation": "screen"
+              },
+              "crop": {
+                "x": 0,
+                "y": 106,
+                "width": 1170,
+                "height": 2104
+              },
+              "footerCrop": {
+                "x": 0,
+                "y": 2210,
+                "width": 1170,
+                "height": 220
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/kinable-care-plans.webp",
+                "alt": "Kinable care plans: all eight care categories, with Passport selected in the navigation.",
+                "width": 1168,
+                "height": 2289,
+                "presentation": "screen"
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 1168,
+                "height": 2070
+              },
+              "footerCrop": {
+                "x": 0,
+                "y": 2070,
+                "width": 1168,
+                "height": 219
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A product to try, not just a document to read.",
+      "paragraphs": [
+        "We used AI tooling to produce a working, clickable mobile prototype quickly, so the product could be judged by using it rather than by reading about it.",
+        "The screens below are from the working build: everyday care, family coordination and care plans in one place."
+      ],
+      "showcases": [
+        {
+          "label": "Everyday care in the working Kinable build",
+          "background": "#E4D5F6",
+          "layout": "care",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/kinable-care-plans.webp",
+                "alt": "Kinable Food & drink care card.",
+                "width": 1168,
+                "height": 2289,
+                "presentation": "screen"
+              },
+              "crop": {
+                "x": 63,
+                "y": 378,
+                "width": 500,
+                "height": 345
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/kinable-care-plans.webp",
+                "alt": "Kinable Personal care card.",
+                "width": 1168,
+                "height": 2289,
+                "presentation": "screen"
+              },
+              "crop": {
+                "x": 605,
+                "y": 378,
+                "width": 500,
+                "height": 345
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/kinable-care-plans.webp",
+                "alt": "Kinable Medication care card.",
+                "width": 1168,
+                "height": 2289,
+                "presentation": "screen"
+              },
+              "crop": {
+                "x": 63,
+                "y": 755,
+                "width": 500,
+                "height": 345
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/kinable-care-plans.webp",
+                "alt": "Kinable Social & activities care card.",
+                "width": 1168,
+                "height": 2289,
+                "presentation": "screen"
+              },
+              "crop": {
+                "x": 605,
+                "y": 755,
+                "width": 500,
+                "height": 345
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/kinable-daily-care-redacted.webp",
+                "alt": "Kinable daily-care detail: task progress, recording a visit and viewing the activity log.",
+                "width": 1170,
+                "height": 2529,
+                "presentation": "screen"
+              },
+              "crop": {
+                "x": 100,
+                "y": 760,
+                "width": 970,
+                "height": 582
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/kinable-daily-care-redacted.webp",
+                "alt": "Kinable wellbeing check-in detail with mood choices and the latest update.",
+                "width": 1170,
+                "height": 2529,
+                "presentation": "screen"
+              },
+              "crop": {
+                "x": 62,
+                "y": 1425,
+                "width": 1046,
+                "height": 455
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A realistic estimate and a phased roadmap.",
+      "paragraphs": [
+        "We set out a realistic cost and a phased plan, so the team knew what they were committing to before they committed to it."
+      ]
+    }
+  ],
+  "outcome": {
+    "summary": "The build is now under way, with the groundwork holding.",
+    "paragraphs": [
+      "The specification, prototype and roadmap are holding through development — the real test of whether the groundwork was right."
+    ],
+    "deliverables": [
+      "Business and technical specification",
+      "Working mobile prototype",
+      "Cost estimate and phased delivery roadmap"
+    ],
+    "next": "Continue development towards commercial launch."
+  },
+  "testimonialId": "kinable",
+  "hero": {
+    "background": {
+      "src": "/images/cases/kinable-sky-stock.webp",
+      "alt": "Green leaves along the edge of an open blue sky.",
+      "width": 2000,
+      "height": 3000,
+      "position": "50% 50%",
+      "illustrative": true,
+      "credit": {
+        "label": "Dhruv Pulipaka / Unsplash",
+        "href": "https://unsplash.com/photos/green-leaves-against-a-clear-blue-sky-5ngibK58EQ4"
+      }
+    },
+    "screen": {
+      "src": "/images/cases/kinable-onboarding.webp",
+      "alt": "Kinable working mobile build: care onboarding with an older man at a doorway.",
+      "width": 1170,
+      "height": 2425,
+      "presentation": "screen"
+    }
+  }
+}

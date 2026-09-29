@@ -1,0 +1,74 @@
+.why-story-context { padding-block: 32px clamp(80px, 8vw, 128px); background: var(--paper); }
+.why-story-explanation { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: clamp(48px, 7vw, 128px); padding-block: clamp(48px, 5vw, 80px); border-top: 1px solid var(--line); }
+.why-story-explanation > :is(h2, h3) { max-width: 16ch; font-size: clamp(34px, 3.1vw, 48px); font-weight: 350; line-height: 1.1; letter-spacing: -.03em; }
+.why-story-prose { max-width: 65ch; font-size: clamp(18px, 1.4vw, 21px); line-height: 1.55; }
+.why-story-prose > p { font-size: inherit; line-height: inherit; }
+.why-story-prose > * + * { margin-top: 24px; }
+.why-story-commitments { margin: 24px 0 0; padding: 8px 0; }
+.why-story-commitments li { padding-block: 20px; border-top: 1px solid var(--line); }
+.why-story-commitments li:last-child { border-bottom: 1px solid var(--line); }
+
+.bold-scroll-story { position: relative; height: 520svh; background: var(--paper); }
+.bold-story-stage { position: sticky; top: 0; height: 100svh; display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 24px; padding-block: clamp(112px, 15svh, 168px) 32px; overflow: clip; isolation: isolate; background: var(--paper); }
+.bold-story-scene { min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1fr); column-gap: 24px; }
+.bold-story-media { grid-column: 2; grid-row: 1; min-width: 0; min-height: 0; display: grid; place-items: center; container-type: size; pointer-events: none; }
+/* Fit the actual frame, not a letterboxed video box: the mask then softens
+   the source's clipped sides at every viewport and doesn't miss the edges.
+   The 4K source also has a dark bottom scanline; feather it into the paper. */
+.bold-story-media video { display: block; width: min(100cqw, calc(100cqh * 16 / 9)); height: auto; aspect-ratio: 16 / 9; mix-blend-mode: darken; mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent), linear-gradient(180deg, transparent, #000 2%, #000 98%, transparent calc(100% - 2px)); mask-composite: intersect; }
+.bold-story-note { display: grid; grid-row: 1; align-self: end; }
+.bold-story-note-0 { grid-column: 1; }
+.bold-story-note-1 { grid-column: 3; }
+.bold-story-note p { grid-area: 1 / 1; align-self: end; margin: 0; font-size: clamp(17px, 1.2vw, 21px); line-height: 1.5; }
+.bold-story-copy { display: grid; }
+.bold-story-claim { grid-area: 1 / 1; width: 100%; max-width: 1040px; margin-inline: auto; text-align: center; }
+.bold-story-measure { visibility: hidden; pointer-events: none; }
+.bold-story-claim h2 { font-size: clamp(40px, 4.8vw, 76px); font-weight: 350; line-height: 1.06; letter-spacing: -.035em; }
+.bold-story-claim .reveal-line { text-wrap: balance; }
+.bold-story-readable { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.bold-story-static { background: var(--paper); }
+.bold-story-still { display: grid; justify-items: center; padding-block: 80px 32px; }
+.bold-story-still h2 { max-width: 24ch; text-align: center; font-size: clamp(36px, 4.8vw, 68px); font-weight: 350; }
+.bold-story-still-media { width: min(100%, 1080px); overflow: clip; }
+.bold-story-still img { width: 100%; height: auto; mix-blend-mode: darken; mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent), linear-gradient(180deg, transparent, #000 2%, #000 98%, transparent calc(100% - 2px)); mask-composite: intersect; }
+.bold-story-still-notes { width: min(100%, 960px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 24px; }
+@media (max-width: 1099px) {
+  .bold-story-scene { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr) auto; gap: 24px 40px; }
+  .bold-story-media { grid-column: 1 / -1; }
+  .bold-story-note { grid-row: 2; align-self: start; padding-bottom: 0; }
+  .bold-story-note-1 { grid-column: 2; }
+}
+@media (max-width: 699px) {
+  .why-story-context { padding-block: 24px 64px; }
+  .why-story-explanation { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 40px; }
+  .why-story-explanation > :is(h2, h3) { max-width: 20ch; font-size: 34px; }
+  .why-story-prose { font-size: 18px; }
+  .bold-scroll-story { height: 440svh; }
+  .bold-story-stage { padding-block: 100px 24px; gap: 16px; }
+  .bold-story-scene { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto auto; gap: 16px; }
+  .bold-story-note { grid-column: 1; }
+  .bold-story-note-1 { grid-row: 3; }
+  .bold-story-note p { font-size: 16px; line-height: 1.45; }
+  .bold-story-claim h2 { font-size: clamp(34px, 8vw, 48px); line-height: 1.08; }
+  .bold-story-still { padding-block: 56px 16px; }
+  .bold-story-still h2 { font-size: clamp(32px, 7.5vw, 44px); }
+  .bold-story-still-notes { grid-template-columns: minmax(0, 1fr); gap: 16px; margin-top: 16px; }
+}
+@media (max-height: 620px) and (min-width: 700px) {
+  .bold-story-stage { padding-top: 100px; gap: 16px; }
+  .bold-story-claim { max-width: 800px; }
+  .bold-story-claim h2 { font-size: 40px; }
+}
+/* A short landscape viewport still gets the scroll film. Put the supporting
+   copy beside it instead of replacing the entire story with static images. */
+@media (max-height: 520px) and (min-width: 600px) {
+  .bold-story-stage { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto auto; align-content: center; gap: 12px 24px; padding: 88px max(24px, env(safe-area-inset-right, 0px)) 16px max(24px, env(safe-area-inset-left, 0px)); }
+  .bold-story-copy { grid-area: 1 / 1; padding: 0; }
+  .bold-story-claim { text-align: left; }
+  .bold-story-claim h2 { font-size: 26px; }
+  .bold-story-scene { display: contents; }
+  .bold-story-media { grid-area: 1 / 2 / 4 / 3; }
+  .bold-story-note { grid-column: 1; grid-row: 2; }
+  .bold-story-note-1 { grid-row: 3; }
+  .bold-story-note p { font-size: 13px; line-height: 1.35; }
+}

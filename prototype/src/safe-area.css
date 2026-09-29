@@ -1,0 +1,22 @@
+/* Let media reach the screen edges; inset controls, not the whole document.
+   The root is the canvas Safari exposes behind its own browser chrome. */
+:root { background: var(--viewport-surface, var(--paper)); }
+.optical-page { background: var(--paper); }
+:root { --safe-top: env(safe-area-inset-top, 0px); --safe-bottom: env(safe-area-inset-bottom, 0px); }
+.wrap { padding-left: max(var(--content-gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--content-gutter), env(safe-area-inset-right, 0px)); }
+.floating-header { top: calc(20px + var(--safe-top)); }
+.navigation--expanding[data-expanded="true"] { top: calc(26px + var(--safe-top)); }
+.photographic-hero { padding-top: calc(clamp(122px, 15svh, 176px) + var(--safe-top)); }
+.footer-photo-signoff { padding-bottom: calc(36px + var(--safe-bottom)); }
+@media (max-width: 699px) {
+  .floating-header { top: calc(12px + var(--safe-top)); }
+  .navigation--expanding[data-expanded="true"] { top: calc(16px + var(--safe-top)); }
+  .mobile-nav { max-height: calc(100svh - 105px - var(--safe-top) - var(--safe-bottom)); }
+  .photographic-hero { padding-top: calc(clamp(116px, 18svh, 164px) + var(--safe-top)); }
+  .bold-story-stage { padding-block: calc(100px + var(--safe-top)) calc(24px + var(--safe-bottom)); }
+  .process-story-stage { padding-block: calc(96px + var(--safe-top)) calc(32px + var(--safe-bottom)); }
+  .footer-photo-signoff { padding-bottom: calc(28px + var(--safe-bottom)); }
+}
+@media (orientation: landscape) {
+  .floating-header { max-width: calc(100% - 32px - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)); }
+}

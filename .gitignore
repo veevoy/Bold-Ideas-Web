@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+handoff/
+.impeccable/
+.agents/
+.codex/
+
+# Superseded local-only design sources; active assets and provenance are tracked.
+docs/retired-case-media/
+docs/retired-case-backgrounds/

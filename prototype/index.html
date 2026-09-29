@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#173438" />
+    <script>
+      // Paint browser-exposed canvas before React mounts. The section sampler
+      // keeps this colour in sync after scrolling; the page has its own ground.
+      const startsDark = location.pathname === '/' || /^\/work\/[^/]+/.test(location.pathname);
+      const viewportSurface = startsDark ? '#173438' : '#F8F3EC';
+      document.documentElement.style.setProperty('--viewport-surface', viewportSurface);
+      document.querySelector('meta[name="theme-color"]').content = viewportSurface;
+      // A refresh starts a new visit at the top. Run before the first paint,
+      // before the browser restores scroll or React resolves a saved anchor.
+      if (performance.getEntriesByType('navigation')[0]?.type === 'reload') {
+        history.scrollRestoration = 'manual';
+        history.replaceState(history.state, '', location.pathname + location.search);
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }
+    </script>
+    <meta name="description" content="You have the bold ideas, we have the tech sorted. Product &amp; AI consultancy for good-doers." />
+    <link rel="icon" type="image/svg+xml" href="/brand/symbol.svg" />
+    <link rel="preload" href="/brand/OverusedGrotesk-VF.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Bold Ideas Consulting — Product &amp; AI consultancy for good-doers</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from './App';
+import './optical.css';
+import './optical-services.css';
+import './hero.css';
+import './navigation.css';
+import './bold-scroll-story.css';
+import './case-studies.css';
+import './case-study-detail.css';
+import './testimonials.css';
+import './footer.css';
+import './about.css';
+import './contact.css';
+import './process.css';
+import './journey.css';
+import './audiences.css';
+import './listing-pages.css';
+import './case-study-thumbnail.css';
+import './interactions.css';
+import './brand-list.css';
+import './safe-area.css';
+
+const root = document.getElementById('root');
+if (!root) throw new Error('The application root is missing.');
+createRoot(root).render(<StrictMode><App /></StrictMode>);

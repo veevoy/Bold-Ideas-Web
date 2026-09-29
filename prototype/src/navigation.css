@@ -1,0 +1,54 @@
+/* Two opt-in local proposals. / keeps the current white navigation pending selection. */
+.navigation--glass {
+  background: rgb(255 253 250 / 60%);
+  color: var(--ink);
+  -webkit-backdrop-filter: blur(14px) saturate(1.12);
+  backdrop-filter: blur(14px) saturate(1.12);
+  transition: background-color .22s ease, color .22s ease;
+}
+.navigation--glass[data-tone="dark"] {
+  background: rgb(23 52 56 / 45%);
+  color: var(--paper);
+  box-shadow: 0 6px 28px rgb(0 0 0 / 10%);
+}
+.navigation--glass.menu-is-open { background: var(--nav-surface); color: var(--ink); }
+
+.navigation--expanding {
+  width: 620px;
+  transition: width .6s var(--ease), padding .6s var(--ease), top .6s var(--ease), background-color .24s ease, color .24s ease, border-radius .4s ease, box-shadow .4s ease;
+}
+.navigation--expanding .nav-row { justify-content: space-between; }
+.site-logo img { width: 112px; object-fit: contain; }
+.navigation--expanding .site-logo img { transition: width .6s var(--ease), height .6s var(--ease); }
+@media (min-width: 700px) {
+  .navigation--expanding[data-expanded="true"] .site-logo img { width: 142px; height: 47px; }
+  .navigation--expanding[data-expanded="true"] .desktop-nav { margin-left: auto; }
+}
+.navigation--expanding[data-expanded="true"] {
+  width: calc(min(100%, var(--content-max)) - 2 * var(--content-gutter));
+  max-width: none;
+  top: 26px;
+  padding: 7px 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--paper);
+}
+.navigation--expanding.menu-is-open { background: var(--nav-surface); color: var(--ink); }
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .navigation--glass { background: var(--nav-surface); }
+  .navigation--glass[data-tone="dark"] { background: var(--ink); }
+}
+@media (max-width: 699px) {
+  .site-logo { margin-left: 8px; }
+  .site-logo img { width: 106px; }
+  .navigation--expanding { width: calc(100% - 24px); }
+  .navigation--expanding[data-expanded="true"] { top: 16px; width: calc(100% - 2 * var(--content-gutter)); padding: 7px 0; }
+}
+@media (prefers-reduced-motion: reduce) { .navigation--glass, .navigation--expanding, .navigation--expanding .site-logo img { transition: none; } }
+html[data-reduced-motion=true] :is(.navigation--glass, .navigation--expanding, .navigation--expanding .site-logo img) { transition: none; }
+@media (prefers-reduced-transparency: reduce) {
+  .navigation--glass { background: var(--nav-surface); backdrop-filter: none; }
+  .navigation--glass[data-tone="dark"] { background: var(--ink); }
+}

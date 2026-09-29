@@ -1,0 +1,4 @@
+.brand-list { list-style: none; padding-inline-start: 0; }
+.brand-list > li { display: grid; grid-template-columns: 16px minmax(0, 1fr); column-gap: 16px; }
+.brand-list > li > span { min-width: 0; }
+.brand-list .brand-list-marker { position: static; width: 16px; height: 16px; margin-top: .4em; fill: var(--list-marker-color, var(--red)); z-index: auto; }

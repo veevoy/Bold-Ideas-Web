@@ -1,0 +1,856 @@
+{
+  "updated": "2026-09-29",
+  "scope": "Active shipped media only. Provenance carried forward from the project records, not a new rights audit. Original downloaded/generated source files are not required at runtime.",
+  "groups": [
+    {
+      "id": "identity",
+      "usage": "Navigation, footer, decorative brand mark and typeface",
+      "files": [
+        "/brand/logo-navigation.svg",
+        "/brand/logo-color.svg",
+        "/brand/logo-light.svg",
+        "/brand/symbol.svg",
+        "/brand/OverusedGrotesk-VF.woff2",
+        "/brand/logo-navigation-light.svg"
+      ],
+      "source": "Original Bold Ideas identity exported from https://www.boldideasconsulting.com/ on 2026-09-21.",
+      "notes": "Navigation version removes consulting only; footer retains original wordmarks. No standalone font license was included in the received project; retain the owner’s brand/font licensing records. Light navigation derivative preserves the original lettering and red mark; only the green lettering becomes Alabaster for contrast on dark backgrounds. Navigation SVG horizontal canvas padding removed for optically equal group spacing; original paths and vertical alignment retained."
+    },
+    {
+      "id": "experience-tesco",
+      "usage": "Homepage experience logo strip",
+      "files": [
+        "/brand/experience/tesco.svg"
+      ],
+      "source": "https://commons.wikimedia.org/wiki/File:Tesco_2026_logo.svg",
+      "notes": "Tesco represents prior agency experience. Internal provenance retained; no on-page qualifying subtitle per explicit user request."
+    },
+    {
+      "id": "hero-film",
+      "usage": "Looping hero film and its mobile/static alternatives",
+      "files": [
+        "/video/coral-collaboration.mp4",
+        "/video/coral-collaboration-mobile.mp4",
+        "/images/coral-collaboration-poster.jpg"
+      ],
+      "sourceFile": "hf_20260922_103121_42b241d6-c2a0-4826-8c8f-89ab415223f2.mp4",
+      "provenance": "User-supplied generated illustrative footage; not the actual team.",
+      "processing": "Silent H.264 faststart derivatives, desktop 1920x1080 and mobile 960x540; matching poster."
+    },
+    {
+      "id": "opening-scroll-film",
+      "usage": "First scroll-controlled story below hero",
+      "files": [
+        "/video/bold-story-scroll-4k.mp4",
+        "/video/bold-story-scroll-mobile.mp4",
+        "/images/bold-story-4k-opening.webp",
+        "/images/bold-story-4k-impact.webp",
+        "/images/bold-story-4k-built.webp"
+      ],
+      "sourceFile": "hf_20260924_131728_0c5884f6-36af-43e7-a018-bb6785aa4106.mp4",
+      "provenance": "User-supplied generated animation.",
+      "processing": "Native 3840x2160/30fps H.264 CRF18/GOP10, silent, faststart. Source start +0.4s; full ending retained; 14.6s. Posters extracted from source 0.4s/5s/13.2s. Frequent keyframes support seeking; do not replace with a long-GOP encode without testing scroll. Mobile/touch derivative: 960x540/30fps H.264 Main level 3.1, CRF24/GOP6, no B-frames, silent faststart; exact same 14.6s edit and scroll mapping. Generated locally from the existing 4K file on 2026-09-29. Stills optimised 29 September: matching 1920px WebP quality 84 derivatives; original 4K JPEG posters archived outside public/."
+    },
+    {
+      "id": "bridge-scroll-film",
+      "usage": "Three-step collaboration story",
+      "files": [
+        "/video/collaboration-bridge-scroll-4k.mp4",
+        "/video/collaboration-bridge-scroll-mobile.mp4",
+        "/images/bridge-4k-opening.webp",
+        "/images/bridge-4k-options.webp",
+        "/images/bridge-4k-complete.webp"
+      ],
+      "sourceFile": "hf_20260924_125918_207f8a04-03c1-4670-9b36-e835abdbfcde.mp4",
+      "provenance": "User-supplied generated animation.",
+      "processing": "Native 3840x2160/30fps, 10s; H.264 CRF18/GOP10, silent faststart. Static alternatives preserve all three steps. Some geometry changes originate in the supplied animation. Mobile uses a 960x540/30fps H.264 Main level 3.1 CRF24/GOP6 derivative with no B-frames for responsive seeking. Both sizes scrub with scroll; reduced-motion uses stills. Mobile derivative re-encoded locally from the existing 4K file on 2026-09-29; unchanged 10s edit. Stills optimised 29 September: matching 1920px WebP quality 84 derivatives; original 4K JPEG posters archived outside public/."
+    },
+    {
+      "id": "footer-film",
+      "usage": "Footer video and static fallback",
+      "files": [
+        "/video/footer-studio.mp4",
+        "/images/footer-studio-poster.jpg"
+      ],
+      "sourceFile": "hf_20260924_135316_d776d5d3-4f3e-4f79-8b70-3dfeb3f5504b.mp4",
+      "provenance": "User-supplied illustrative footage; not evidence of the actual office.",
+      "processing": "Full 10.041667s at native 1920x1080/24fps. HEVC source converted to H.264 CRF19, silent faststart."
+    },
+    {
+      "id": "audience-charities",
+      "usage": "Temporary illustrative background for charities",
+      "files": [
+        "/video/audiences/charities.mp4",
+        "/images/audiences/charities.jpg"
+      ],
+      "title": "Volunteers Packing Foods to Donate",
+      "author": "Julia M Cameron",
+      "page": "https://www.pexels.com/video/volunteers-packing-foods-to-donate-6893983/",
+      "download": "https://videos.pexels.com/video-files/6893983/6893983-uhd_2560_1440_25fps.mp4",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "id": "audience-climate",
+      "usage": "Temporary illustrative nature background for climate solutions",
+      "files": [
+        "/video/audiences/climate-canyon.mp4",
+        "/images/audiences/climate-canyon.jpg"
+      ],
+      "title": "Fly over a huge canyon covered in vegetation",
+      "page": "https://mixkit.co/free-stock-video/fly-over-a-huge-canyon-covered-in-vegetation-41401/",
+      "download": "https://assets.mixkit.co/videos/41401/41401-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "processing": "First 16s, native 1920x1080 and native playback speed. Silent H.264 CRF24 faststart, maxrate 4.5 Mbps. Matching poster at 1s. Selected by the client."
+    },
+    {
+      "id": "audience-wellbeing",
+      "usage": "Temporary illustrative background for wellbeing solutions",
+      "files": [
+        "/video/audiences/wellbeing-motion.mp4",
+        "/images/audiences/wellbeing-motion.jpg"
+      ],
+      "title": "Woman doing yoga outdoors",
+      "page": "https://mixkit.co/free-stock-video/woman-doing-yoga-outdoors-4878/",
+      "download": "https://assets.mixkit.co/videos/4878/4878-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "processing": "Source from second 5 through end (7.93s), starting as the arms begin to move. Native 1920x1080 at 24000/1001 fps. Silent H.264 CRF23 faststart; native playback rate. Poster from first frame of trimmed clip."
+    },
+    {
+      "id": "audience-innovators",
+      "usage": "Temporary illustrative background for innovators",
+      "files": [
+        "/video/audiences/innovators-conference.mp4",
+        "/images/audiences/innovators-conference.jpg"
+      ],
+      "title": "Man speaking at corporate conference meeting",
+      "provenance": "User-provided asset; user requested use on the local website. No external license verification performed.",
+      "processing": "Full 5.56s source video remuxed without re-encoding: H.264 1920x1080, 25fps, native speed, silent faststart MP4. Source data stream omitted; matching 1280x720 poster at 1s, centered crop.",
+      "sourceFile": "man-speaking-at-corporate-conference-meeting-2026-09-17-20-30-26-utc.mp4"
+    },
+    {
+      "id": "testimonial-big-brand-love-logo",
+      "usage": "Testimonial company mark",
+      "files": [
+        "/images/testimonials/big-brand-love-logo.jpg"
+      ],
+      "type": "sourced company logo",
+      "source": "https://img1.wsimg.com/isteam/ip/a4621a7d-daef-4755-af4b-8c8b920c39d3/BBLLogoRedOnWhite.jpg/:/",
+      "page": "https://bigbrand.love",
+      "method": "Official company logo inside a favicon-size holder; official site favicon is generic host branding. No generative edits."
+    },
+    {
+      "id": "testimonial-fx-digital-icon",
+      "usage": "Testimonial company mark",
+      "files": [
+        "/images/testimonials/fx-digital-icon.png"
+      ],
+      "type": "sourced company favicon",
+      "source": "https://fxdigital.uk/wp-content/themes/fx-digital/dist/images/favicon/favicon-96x96.png",
+      "page": "https://fxdigital.uk/",
+      "method": "Official favicon, unaltered."
+    },
+    {
+      "id": "testimonial-konexis-icon",
+      "usage": "Testimonial company mark",
+      "files": [
+        "/images/testimonials/konexis-icon.png"
+      ],
+      "type": "sourced company favicon",
+      "source": "https://konexis.co.uk/wp-content/uploads/2023/06/konexis_web_favicon-150x150.png",
+      "page": "https://konexis.co.uk/about-konexis/",
+      "method": "Official favicon, unaltered."
+    },
+    {
+      "id": "testimonial-zellebrate-icon",
+      "usage": "Testimonial company mark",
+      "files": [
+        "/images/testimonials/zellebrate-icon.png"
+      ],
+      "type": "sourced company mark",
+      "source": "https://uploads-ssl.webflow.com/5e60aafddf9df89c1deb10c7/5ee1dc349dc531bd84f1fcf3_zellebrate%20VC%20Pitch%20Deck%20-%20June%2011%2C%202020.pdf",
+      "method": "Red symbol region rendered from page 17 of public company pitch PDF. No generative edits."
+    },
+    {
+      "id": "czech-beer-alliance",
+      "usage": "Czech Beer Alliance hero background, homepage/index/related previews and narrative image",
+      "files": [
+        "/images/czech-beer-alliance-brewery.jpg"
+      ],
+      "source": "https://czechbeeralliance.co.uk/uploads/2019/04/pivovar-compressor.jpg",
+      "notes": "Client-context brewery photograph from the official Czech Beer Alliance website. Unmodified 1920×1280 JPEG. Used alone as the hero and thumbnail background; not a BoldLeads product screenshot. Attribution retained in metadata. Local only."
+    },
+    {
+      "id": "kinable-working-build",
+      "usage": "Kinable case detail, listing and homepage project preview",
+      "files": [
+        "/images/cases/kinable-onboarding.webp",
+        "/images/cases/kinable-daily-care-redacted.webp",
+        "/images/cases/kinable-care-plans.webp"
+      ],
+      "sourceFile": "CS.pptx, slide 3 (user supplied, 25 September 2026)",
+      "provenance": "Screens of the Kinable working mobile build supplied by the client. Project remains in development, not a launched product.",
+      "processing": "Full, uncropped source screenshots converted to WebP at quality 91; source dimensions retained. On 29 September 2026 the daily-care screenshot was replaced by a lossless WebP derivative removing only the named attribution and its preceding separator from the wellbeing card, at the user’s request. Pixels outside the 305×66 redaction at (330, 1780) are identical to the original decoded screenshot.",
+      "presentation": "Phone compositions remove the OS status row and excess bottom whitespace; original bottom-navigation crops are anchored to equal-height frames. The daily-care source is locally redacted; its original is archived outside public/. All original UI geometry and other content are preserved.",
+      "redactionProvenance": "docs/retired-case-media/kinable-daily-care-redaction-provenance.json"
+    },
+    {
+      "id": "kinable-hero-background",
+      "usage": "Decorative stock background shared by the case-study hero, homepage, index and related-story thumbnails",
+      "files": [
+        "/images/cases/kinable-sky-stock.webp"
+      ],
+      "source": "https://unsplash.com/photos/green-leaves-against-a-clear-blue-sky-5ngibK58EQ4",
+      "credit": "Dhruv Pulipaka / Unsplash",
+      "license": "https://unsplash.com/license",
+      "provenance": "Real stock photograph; atmospheric context, not a client-owned location. Downloaded 28 September 2026. No generative edits.",
+      "processing": "Unsplash WebP derivative, width 2000px, quality 76; full source composition retained. Responsive cropping and light shading use CSS."
+    },
+    {
+      "id": "mapwhizz-hero-background",
+      "usage": "Case-study hero; thumbnails now use an authored UI composition.",
+      "files": [
+        "/images/cases/mapwhizz-architecture-stock.webp"
+      ],
+      "source": "https://unsplash.com/photos/a-white-building-with-a-blue-sky-in-the-background-KqwgBSp9bY0",
+      "credit": "Tandem X Visuals / Unsplash",
+      "license": "https://unsplash.com/license",
+      "provenance": "Real stock photograph; atmospheric context, not a client-owned location. Downloaded 28 September 2026. No generative edits.",
+      "processing": "Unsplash WebP derivative, width 2000px, quality 76; full source composition retained. Responsive cropping and light shading use CSS."
+    },
+    {
+      "id": "brewery-stock",
+      "usage": "CBA chapter photograph, editorial brewery context only; replaced by the quieter field photograph in heroes and thumbnails",
+      "files": [
+        "/images/cases/brewery-stock.webp"
+      ],
+      "source": "https://www.pexels.com/photo/modern-brewery-tanks-in-pilsen-czech-republic-35966972/",
+      "credit": "Marcel Gierschick / Pexels",
+      "license": "https://www.pexels.com/license/",
+      "provenance": "Real stock photography. Context only, not a claim that this is a client-owned location.",
+      "processing": "WebP quality 88, longest side capped at 2200px; no generative edits. Darkness is a CSS overlay."
+    },
+    {
+      "id": "testimonial-kinable-icon",
+      "usage": "Circular company mark before testimonial author on every route",
+      "files": [
+        "/images/testimonials/kinable-icon.svg"
+      ],
+      "source": "https://kinable.io/assets/Logo_Primary-DWS0tIEV.svg",
+      "processing": "Original standalone symbol and gradient retained from official primary SVG; wordmark removed and viewBox tightened."
+    },
+    {
+      "id": "testimonial-mapwhizz-icon",
+      "usage": "Circular company mark before testimonial author on every route",
+      "files": [
+        "/images/testimonials/mapwhizz-icon.png"
+      ],
+      "source": "https://www.mapwhizz.co.uk/favicon/favicon-96x96.png",
+      "processing": "Official favicon copied unchanged."
+    },
+    {
+      "id": "experience-mapwhizz",
+      "usage": "Homepage experience logo strip",
+      "files": [
+        "/brand/experience/mapwhizz.svg"
+      ],
+      "source": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/?node-id=970-15993",
+      "processing": "Original Figma wordmark and map-pin vector paths retained. Three internal clock details are transparent cutouts through a luminance mask, preserving the symbol under the white monochrome CSS filter."
+    },
+    {
+      "id": "experience-lph",
+      "usage": "Homepage experience logo strip",
+      "files": [
+        "/brand/experience/lph.svg"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/?node-id=793-8469",
+      "processing": "Original lettering paths and gold calligraphic mark from the Figma vector export, combined on the original 144×80 canvas without the beige raster background. Source colours retained; CSS displays the complete logo in white monochrome."
+    },
+    {
+      "id": "experience-kinable",
+      "usage": "Homepage experience logo strip",
+      "files": [
+        "/brand/experience/kinable.svg"
+      ],
+      "source": "https://kinable.io/assets/Logo_Primary-DWS0tIEV.svg",
+      "processing": "Original full logo geometry, navy lettering and purple gradient retained. White monochrome display through CSS; no visible qualifying subtitle."
+    },
+    {
+      "id": "mapwhizz-report-detail-figma",
+      "usage": "Case-study hero; thumbnails now use an authored UI composition.",
+      "files": [
+        "/images/cases/mapwhizz-report-detail-figma.webp"
+      ],
+      "source": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/?node-id=970-9548",
+      "provenance": "Authentic report detail from supplied Figma frame. Design examples are not client impact metrics.",
+      "processing": "Original 2268×7668 export reduced to design size 1512×5112; top 1512×1068 viewport retained, lossless WebP. Interface content unaltered."
+    },
+    {
+      "id": "mapwhizz-case-commute",
+      "usage": "User-authored Mapwhizz case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/mapwhizz-case-commute.webp"
+      ],
+      "source": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-9471",
+      "provenance": "Prepared by the user in the supplied Figma section 1492:8466 and exported on 29 September 2026. Product/design examples; figures are not engagement outcome metrics.",
+      "processing": "Complete 2050×1318 frame exported as PNG and losslessly encoded as WebP. No crop, resize, colour adjustment or composition changes."
+    },
+    {
+      "id": "mapwhizz-case-company",
+      "usage": "User-authored Mapwhizz case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/mapwhizz-case-company.webp"
+      ],
+      "source": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-9701",
+      "provenance": "Prepared by the user in the supplied Figma section 1492:8466 and exported on 29 September 2026. Product/design examples; figures are not engagement outcome metrics.",
+      "processing": "Complete 2050×1318 frame exported as PNG and losslessly encoded as WebP. No crop, resize, colour adjustment or composition changes."
+    },
+    {
+      "id": "mapwhizz-case-postcodes",
+      "usage": "User-authored Mapwhizz case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/mapwhizz-case-postcodes.webp"
+      ],
+      "source": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-9698",
+      "provenance": "Prepared by the user in the supplied Figma section 1492:8466 and exported on 29 September 2026. Product/design examples; figures are not engagement outcome metrics.",
+      "processing": "Complete 2050×1318 frame exported as PNG and losslessly encoded as WebP. No crop, resize, colour adjustment or composition changes."
+    },
+    {
+      "id": "mapwhizz-case-study-types",
+      "usage": "User-authored Mapwhizz case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/mapwhizz-case-study-types.webp"
+      ],
+      "source": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-10057",
+      "provenance": "Prepared by the user in the supplied Figma section 1492:8466 and exported on 29 September 2026. Product/design examples; figures are not engagement outcome metrics.",
+      "processing": "Complete 964×1318 frame exported as PNG and losslessly encoded as WebP. No crop, resize, colour adjustment or composition changes."
+    },
+    {
+      "id": "mapwhizz-case-results",
+      "usage": "User-authored Mapwhizz case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/mapwhizz-case-results.webp"
+      ],
+      "source": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-10061",
+      "provenance": "Prepared by the user in the supplied Figma section 1492:8466 and exported on 29 September 2026. Product/design examples; figures are not engagement outcome metrics.",
+      "processing": "Complete 964×1318 frame exported as PNG and losslessly encoded as WebP. No crop, resize, colour adjustment or composition changes."
+    },
+    {
+      "id": "mapwhizz-thumbnail-graphs",
+      "usage": "Mapwhizz thumbnails on homepage, case-study index and related stories; paired with the unchanged hero background",
+      "files": [
+        "/images/cases/mapwhizz-thumbnail-graphs.webp"
+      ],
+      "source": "https://www.figma.com/design/2emHBe8UKBPQAjHFVkj7tn/Mapwhizz-design?node-id=1492-9472",
+      "provenance": "Original graph panel exported read-only from the user-prepared Figma composition on 29 September 2026. Report figures are example product data, not project impact metrics.",
+      "processing": "Full panel with transparent corners, 1264×1129, lossless WebP from the original PNG export. No UI content changes."
+    },
+    {
+      "id": "lph-case-about",
+      "usage": "Client-prepared LPH case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/lph-case-about.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-15726",
+      "provenance": "Finished composition supplied by the owner in Figma section 1935:9606 on 29 September 2026. Design evidence; not a claim that every pictured feature is live. Names and figures belong to the supplied design.",
+      "processing": "Read-only Figma PNG export at original 964×1318 dimensions; encoded as lossless WebP and verified pixel-identical. The supplied composition, background, crops and frame are unchanged. No additional CSS crop, bezel, shadow or padding.",
+      "sha256": "ff14b098f33ec293b7a47f08b44811fb58d93477db52fa561c66b9dc85f864dd"
+    },
+    {
+      "id": "lph-case-song",
+      "usage": "Client-prepared LPH case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/lph-case-song.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-15728",
+      "provenance": "Finished composition supplied by the owner in Figma section 1935:9606 on 29 September 2026. Design evidence; not a claim that every pictured feature is live. Names and figures belong to the supplied design.",
+      "processing": "Read-only Figma PNG export at original 964×1318 dimensions; encoded as lossless WebP and verified pixel-identical. The supplied composition, background, crops and frame are unchanged. No additional CSS crop, bezel, shadow or padding.",
+      "sha256": "7db675dff42e96c9be9a7631c9a49191fe3dc8b5c62b219c95d0aa72602ad44a"
+    },
+    {
+      "id": "lph-case-donation",
+      "usage": "Client-prepared LPH case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/lph-case-donation.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-10611",
+      "provenance": "Finished composition supplied by the owner in Figma section 1935:9606 on 29 September 2026. Design evidence; not a claim that every pictured feature is live. Names and figures belong to the supplied design.",
+      "processing": "Read-only Figma PNG export at original 2050×1318 dimensions; encoded as lossless WebP and verified pixel-identical. The supplied composition, background, crops and frame are unchanged. No additional CSS crop, bezel, shadow or padding.",
+      "sha256": "6e1c5f28e2446e026c6ca7c3bbeb576c1b5d3897f607b0c151b5549c342fccff"
+    },
+    {
+      "id": "lph-case-volunteering",
+      "usage": "Client-prepared LPH case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/lph-case-volunteering.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-10841",
+      "provenance": "Finished composition supplied by the owner in Figma section 1935:9606 on 29 September 2026. Design evidence; not a claim that every pictured feature is live. Names and figures belong to the supplied design.",
+      "processing": "Read-only Figma PNG export at original 2050×1318 dimensions; encoded as lossless WebP and verified pixel-identical. The supplied composition, background, crops and frame are unchanged. No additional CSS crop, bezel, shadow or padding.",
+      "sha256": "979040ded92e28d967e6a57c412273a8239a30c015341cdb1ae1c13c9e685480"
+    },
+    {
+      "id": "lph-case-global-map",
+      "usage": "Client-prepared LPH case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/lph-case-global-map.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-11197",
+      "provenance": "Finished composition supplied by the owner in Figma section 1935:9606 on 29 September 2026. Design evidence; not a claim that every pictured feature is live. Names and figures belong to the supplied design.",
+      "processing": "Read-only Figma PNG export at original 964×1318 dimensions; encoded as lossless WebP and verified pixel-identical. The supplied composition, background, crops and frame are unchanged. No additional CSS crop, bezel, shadow or padding.",
+      "sha256": "c35a6bbd7d60e649b8c144b04744805823ce5779ee8708ba08d06fe22b78294c"
+    },
+    {
+      "id": "lph-case-sign-in",
+      "usage": "Client-prepared LPH case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/lph-case-sign-in.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-11201",
+      "provenance": "Finished composition supplied by the owner in Figma section 1935:9606 on 29 September 2026. Design evidence; not a claim that every pictured feature is live. Names and figures belong to the supplied design.",
+      "processing": "Read-only Figma PNG export at original 964×1318 dimensions; encoded as lossless WebP and verified pixel-identical. The supplied composition, background, crops and frame are unchanged. No additional CSS crop, bezel, shadow or padding.",
+      "sha256": "8ba98ab8cc7aebb1be4114a78831185e755e152dbe8471b14284913f34a81999"
+    },
+    {
+      "id": "lph-case-events-projects",
+      "usage": "Client-prepared LPH case-study artwork, retained as a complete image",
+      "files": [
+        "/images/cases/lph-case-events-projects.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-10838",
+      "provenance": "Finished composition supplied by the owner in Figma section 1935:9606 on 29 September 2026. Design evidence; not a claim that every pictured feature is live. Names and figures belong to the supplied design.",
+      "processing": "Read-only Figma PNG export at original 2050×1318 dimensions; encoded as lossless WebP and verified pixel-identical. The supplied composition, background, crops and frame are unchanged. No additional CSS crop, bezel, shadow or padding.",
+      "sha256": "f9ffa75d838b351485c83f055f12fcdec022fd9b4cf915cb1ce94c4f1ff6b8dc"
+    },
+    {
+      "id": "lph-donate-figma",
+      "usage": "LPH hero and thumbnails, paired with the supplied sea background",
+      "files": [
+        "/images/cases/lph-donate-figma.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-11471",
+      "provenance": "Read-only export from the user-supplied Figma composition on 29 September 2026. Original interface content retained; not a claim that every pictured feature is live.",
+      "processing": "The 20px presentation frame was removed from each edge of the 1552×1024 export, leaving the complete 1512×984 interface. Lossless WebP verified pixel-identical to that extraction. The site supplies its shared translucent bezel.",
+      "sha256": "9c102575a5726459e7039cf1eb4198e01636088aa3ac11a7e311c847f0e6f977"
+    },
+    {
+      "id": "love-peace-harmony-hero-background",
+      "usage": "Decorative sea background shared by the LPH hero, homepage, index and related-story thumbnails",
+      "files": [
+        "/images/cases/lph-sea-figma.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-15724",
+      "provenance": "Background supplied inside the owner’s Figma composition. Decorative context, not a client location. Underlying photography source was not specified in the supplied design.",
+      "processing": "Read-only PNG export of the background layer at the 2050×1318 composition bounds, converted to pixel-identical lossless WebP. Responsive cropping and shading use CSS.",
+      "sha256": "98cf95abf73f0c0102370e50530fad41505ed1480cab32eab107b67eec46131d"
+    },
+    {
+      "id": "lph-case-dashboard",
+      "usage": "Corrected client-prepared LPH dashboard composition, with the full logo visible",
+      "files": [
+        "/images/cases/lph-case-dashboard-corrected.webp"
+      ],
+      "source": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-9607",
+      "provenance": "Fresh read-only export on 29 September 2026 after the dashboard position was corrected in the supplied Figma design. Names and figures belong to the design.",
+      "processing": "Full 2050×1318 frame retained; lossless WebP verified pixel-identical. No additional CSS crop, bezel, shadow or padding.",
+      "sha256": "a2b75b81d562e24267fe66dd95b5d42dab4ee79c4d8387faa919e3d51762b243"
+    },
+    {
+      "id": "automation-pipeline-demo",
+      "usage": "Services index: AI Automation Starter, directly below What you get",
+      "files": [
+        "/video/automation-pipeline-showcase.mp4",
+        "/images/automation-pipeline-poster.webp"
+      ],
+      "sourceFile": "Pipeline_Showcase.mp4",
+      "provenance": "Workflow demonstration video supplied by the user on 29 September 2026.",
+      "processing": "Full-duration 1920×1080 H.264/yuv420p at 30fps, CRF21, faststart; silent audio and data streams omitted. 34.967s, 1,479,621 bytes. Matching poster extracted at 6 seconds and encoded to WebP quality 88. Native controls, playsInline and preload=none; no autoplay."
+    },
+    {
+      "id": "responsive-images",
+      "usage": "Responsive candidates for case heroes, thumbnails, galleries and video stills",
+      "files": [
+        "/images/responsive/audiences-charities-480.webp",
+        "/images/responsive/audiences-charities-960.webp",
+        "/images/responsive/audiences-climate-canyon-480.webp",
+        "/images/responsive/audiences-climate-canyon-960.webp",
+        "/images/responsive/audiences-innovators-conference-480.webp",
+        "/images/responsive/audiences-innovators-conference-960.webp",
+        "/images/responsive/audiences-wellbeing-motion-480.webp",
+        "/images/responsive/audiences-wellbeing-motion-960.webp",
+        "/images/responsive/bold-story-4k-built-480.webp",
+        "/images/responsive/bold-story-4k-built-960.webp",
+        "/images/responsive/bold-story-4k-built-1440.webp",
+        "/images/responsive/bold-story-4k-impact-480.webp",
+        "/images/responsive/bold-story-4k-impact-960.webp",
+        "/images/responsive/bold-story-4k-impact-1440.webp",
+        "/images/responsive/bold-story-4k-opening-480.webp",
+        "/images/responsive/bold-story-4k-opening-960.webp",
+        "/images/responsive/bold-story-4k-opening-1440.webp",
+        "/images/responsive/bridge-4k-complete-480.webp",
+        "/images/responsive/bridge-4k-complete-960.webp",
+        "/images/responsive/bridge-4k-complete-1440.webp",
+        "/images/responsive/bridge-4k-opening-480.webp",
+        "/images/responsive/bridge-4k-opening-960.webp",
+        "/images/responsive/bridge-4k-opening-1440.webp",
+        "/images/responsive/bridge-4k-options-480.webp",
+        "/images/responsive/bridge-4k-options-960.webp",
+        "/images/responsive/bridge-4k-options-1440.webp",
+        "/images/responsive/cases-brewery-stock-480.webp",
+        "/images/responsive/cases-brewery-stock-960.webp",
+        "/images/responsive/cases-brewery-stock-1440.webp",
+        "/images/responsive/cases-kinable-daily-care-redacted-480.webp",
+        "/images/responsive/cases-kinable-daily-care-redacted-960.webp",
+        "/images/responsive/cases-kinable-sky-stock-480.webp",
+        "/images/responsive/cases-kinable-sky-stock-960.webp",
+        "/images/responsive/cases-kinable-sky-stock-1440.webp",
+        "/images/responsive/cases-lph-case-about-480.webp",
+        "/images/responsive/cases-lph-case-about-960.webp",
+        "/images/responsive/cases-lph-case-dashboard-corrected-480.webp",
+        "/images/responsive/cases-lph-case-dashboard-corrected-960.webp",
+        "/images/responsive/cases-lph-case-dashboard-corrected-1440.webp",
+        "/images/responsive/cases-lph-case-donation-480.webp",
+        "/images/responsive/cases-lph-case-donation-960.webp",
+        "/images/responsive/cases-lph-case-donation-1440.webp",
+        "/images/responsive/cases-lph-case-events-projects-480.webp",
+        "/images/responsive/cases-lph-case-events-projects-960.webp",
+        "/images/responsive/cases-lph-case-events-projects-1440.webp",
+        "/images/responsive/cases-lph-case-global-map-480.webp",
+        "/images/responsive/cases-lph-case-sign-in-480.webp",
+        "/images/responsive/cases-lph-case-sign-in-960.webp",
+        "/images/responsive/cases-lph-case-song-480.webp",
+        "/images/responsive/cases-lph-case-song-960.webp",
+        "/images/responsive/cases-lph-case-volunteering-480.webp",
+        "/images/responsive/cases-lph-case-volunteering-960.webp",
+        "/images/responsive/cases-lph-case-volunteering-1440.webp",
+        "/images/responsive/cases-lph-donate-figma-480.webp",
+        "/images/responsive/cases-lph-donate-figma-960.webp",
+        "/images/responsive/cases-lph-donate-figma-1440.webp",
+        "/images/responsive/cases-lph-sea-figma-480.webp",
+        "/images/responsive/cases-lph-sea-figma-960.webp",
+        "/images/responsive/cases-lph-sea-figma-1440.webp",
+        "/images/responsive/cases-mapwhizz-architecture-stock-480.webp",
+        "/images/responsive/cases-mapwhizz-architecture-stock-960.webp",
+        "/images/responsive/cases-mapwhizz-architecture-stock-1440.webp",
+        "/images/responsive/cases-mapwhizz-case-commute-480.webp",
+        "/images/responsive/cases-mapwhizz-case-company-480.webp",
+        "/images/responsive/cases-mapwhizz-case-company-960.webp",
+        "/images/responsive/cases-mapwhizz-case-postcodes-480.webp",
+        "/images/responsive/cases-mapwhizz-case-postcodes-960.webp",
+        "/images/responsive/cases-mapwhizz-case-postcodes-1440.webp",
+        "/images/responsive/cases-mapwhizz-case-results-480.webp",
+        "/images/responsive/cases-mapwhizz-case-study-types-480.webp",
+        "/images/responsive/cases-mapwhizz-report-detail-figma-480.webp",
+        "/images/responsive/cases-mapwhizz-report-detail-figma-960.webp",
+        "/images/responsive/cases-mapwhizz-thumbnail-graphs-480.webp",
+        "/images/responsive/coral-collaboration-poster-480.webp",
+        "/images/responsive/coral-collaboration-poster-960.webp",
+        "/images/responsive/coral-collaboration-poster-1440.webp",
+        "/images/responsive/czech-beer-alliance-brewery-480.webp",
+        "/images/responsive/czech-beer-alliance-brewery-960.webp",
+        "/images/responsive/czech-beer-alliance-brewery-1440.webp",
+        "/images/responsive/footer-studio-poster-480.webp",
+        "/images/responsive/footer-studio-poster-960.webp",
+        "/images/responsive/footer-studio-poster-1440.webp"
+      ],
+      "processing": "480/960/1440px derivatives, never upscaled. UI uses lossless WebP after proportional Lanczos resize; photographic backgrounds and stills use quality 84. Original exports remain the largest candidate. Source hashes and provenance below refer to the original groups in this inventory.",
+      "sources": [
+        {
+          "source": "/images/audiences/charities.jpg",
+          "sourceSha256": "90b9c917bec03d577239683d59ca885f1674fa772f588450a28850f5ae308863",
+          "files": [
+            "/images/responsive/audiences-charities-480.webp",
+            "/images/responsive/audiences-charities-960.webp"
+          ]
+        },
+        {
+          "source": "/images/audiences/climate-canyon.jpg",
+          "sourceSha256": "f710bcf5a233f1a6dc742b54e8c65021f28af17364b9da88a6aa7e2bc92829b5",
+          "files": [
+            "/images/responsive/audiences-climate-canyon-480.webp",
+            "/images/responsive/audiences-climate-canyon-960.webp"
+          ]
+        },
+        {
+          "source": "/images/audiences/innovators-conference.jpg",
+          "sourceSha256": "fc384f6881df5fb96f4ccce5a6784c0df9ddf5c22121b52412943f01e34027f4",
+          "files": [
+            "/images/responsive/audiences-innovators-conference-480.webp",
+            "/images/responsive/audiences-innovators-conference-960.webp"
+          ]
+        },
+        {
+          "source": "/images/audiences/wellbeing-motion.jpg",
+          "sourceSha256": "bc11823e96d0d01f1b989ad70f22ea4ce9f5b5bd677f9a03905af7aa82ffe031",
+          "files": [
+            "/images/responsive/audiences-wellbeing-motion-480.webp",
+            "/images/responsive/audiences-wellbeing-motion-960.webp"
+          ]
+        },
+        {
+          "source": "/images/bold-story-4k-built.webp",
+          "sourceSha256": "a1d41ef23ed570e375278ec16b0af1144ca5ec76db484b34ce9c57d44394789c",
+          "files": [
+            "/images/responsive/bold-story-4k-built-480.webp",
+            "/images/responsive/bold-story-4k-built-960.webp",
+            "/images/responsive/bold-story-4k-built-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/bold-story-4k-impact.webp",
+          "sourceSha256": "1a119e66010588cd27e5daa1f341282800721a39a0e6f752cab07f9668a8a066",
+          "files": [
+            "/images/responsive/bold-story-4k-impact-480.webp",
+            "/images/responsive/bold-story-4k-impact-960.webp",
+            "/images/responsive/bold-story-4k-impact-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/bold-story-4k-opening.webp",
+          "sourceSha256": "7cba059c53f9b163cd659dc4ed62e3d2a067c0f604c11db4f38b88fed37f2ddc",
+          "files": [
+            "/images/responsive/bold-story-4k-opening-480.webp",
+            "/images/responsive/bold-story-4k-opening-960.webp",
+            "/images/responsive/bold-story-4k-opening-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/bridge-4k-complete.webp",
+          "sourceSha256": "2ae3f9b76c70fc10ca73d8d66a91c9b3ab8d9becd41211b9884d41ee27553581",
+          "files": [
+            "/images/responsive/bridge-4k-complete-480.webp",
+            "/images/responsive/bridge-4k-complete-960.webp",
+            "/images/responsive/bridge-4k-complete-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/bridge-4k-opening.webp",
+          "sourceSha256": "5abcf1180953145a59ddca7e1f6e9c5e03886fad4f2902382759b581674a757e",
+          "files": [
+            "/images/responsive/bridge-4k-opening-480.webp",
+            "/images/responsive/bridge-4k-opening-960.webp",
+            "/images/responsive/bridge-4k-opening-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/bridge-4k-options.webp",
+          "sourceSha256": "1ffb5626d50d6c03ed429c5bbdef4755aa33fc0c0e2d906982ba3fb27200866b",
+          "files": [
+            "/images/responsive/bridge-4k-options-480.webp",
+            "/images/responsive/bridge-4k-options-960.webp",
+            "/images/responsive/bridge-4k-options-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/brewery-stock.webp",
+          "sourceSha256": "0675ac7a5cad5d20580a445403c6b3f21f7040e2e53d9313f926680c7d7f4bb9",
+          "files": [
+            "/images/responsive/cases-brewery-stock-480.webp",
+            "/images/responsive/cases-brewery-stock-960.webp",
+            "/images/responsive/cases-brewery-stock-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/kinable-care-plans.webp",
+          "sourceSha256": "770935c3577c3e9ebd7e342150d31569e4f2d039290c478afbc60b1575207f46",
+          "files": []
+        },
+        {
+          "source": "/images/cases/kinable-daily-care-redacted.webp",
+          "sourceSha256": "f0e0a4054a6d713b60d39a44f10290c2a70288658b26741290fedd21994a1234",
+          "files": [
+            "/images/responsive/cases-kinable-daily-care-redacted-480.webp",
+            "/images/responsive/cases-kinable-daily-care-redacted-960.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/kinable-onboarding.webp",
+          "sourceSha256": "9d0d08a4c638feac880048416faaed88d2e354ec68c85d4b83360db6904f9f9e",
+          "files": []
+        },
+        {
+          "source": "/images/cases/kinable-sky-stock.webp",
+          "sourceSha256": "14cc7480ad38df8f390c8b99595ab3b692cc0aa21112cecf9c0012722869add4",
+          "files": [
+            "/images/responsive/cases-kinable-sky-stock-480.webp",
+            "/images/responsive/cases-kinable-sky-stock-960.webp",
+            "/images/responsive/cases-kinable-sky-stock-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-case-about.webp",
+          "sourceSha256": "ff14b098f33ec293b7a47f08b44811fb58d93477db52fa561c66b9dc85f864dd",
+          "files": [
+            "/images/responsive/cases-lph-case-about-480.webp",
+            "/images/responsive/cases-lph-case-about-960.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-case-dashboard-corrected.webp",
+          "sourceSha256": "a2b75b81d562e24267fe66dd95b5d42dab4ee79c4d8387faa919e3d51762b243",
+          "files": [
+            "/images/responsive/cases-lph-case-dashboard-corrected-480.webp",
+            "/images/responsive/cases-lph-case-dashboard-corrected-960.webp",
+            "/images/responsive/cases-lph-case-dashboard-corrected-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-case-donation.webp",
+          "sourceSha256": "6e1c5f28e2446e026c6ca7c3bbeb576c1b5d3897f607b0c151b5549c342fccff",
+          "files": [
+            "/images/responsive/cases-lph-case-donation-480.webp",
+            "/images/responsive/cases-lph-case-donation-960.webp",
+            "/images/responsive/cases-lph-case-donation-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-case-events-projects.webp",
+          "sourceSha256": "f9ffa75d838b351485c83f055f12fcdec022fd9b4cf915cb1ce94c4f1ff6b8dc",
+          "files": [
+            "/images/responsive/cases-lph-case-events-projects-480.webp",
+            "/images/responsive/cases-lph-case-events-projects-960.webp",
+            "/images/responsive/cases-lph-case-events-projects-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-case-global-map.webp",
+          "sourceSha256": "c35a6bbd7d60e649b8c144b04744805823ce5779ee8708ba08d06fe22b78294c",
+          "files": [
+            "/images/responsive/cases-lph-case-global-map-480.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-case-sign-in.webp",
+          "sourceSha256": "8ba98ab8cc7aebb1be4114a78831185e755e152dbe8471b14284913f34a81999",
+          "files": [
+            "/images/responsive/cases-lph-case-sign-in-480.webp",
+            "/images/responsive/cases-lph-case-sign-in-960.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-case-song.webp",
+          "sourceSha256": "7db675dff42e96c9be9a7631c9a49191fe3dc8b5c62b219c95d0aa72602ad44a",
+          "files": [
+            "/images/responsive/cases-lph-case-song-480.webp",
+            "/images/responsive/cases-lph-case-song-960.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-case-volunteering.webp",
+          "sourceSha256": "979040ded92e28d967e6a57c412273a8239a30c015341cdb1ae1c13c9e685480",
+          "files": [
+            "/images/responsive/cases-lph-case-volunteering-480.webp",
+            "/images/responsive/cases-lph-case-volunteering-960.webp",
+            "/images/responsive/cases-lph-case-volunteering-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-donate-figma.webp",
+          "sourceSha256": "9c102575a5726459e7039cf1eb4198e01636088aa3ac11a7e311c847f0e6f977",
+          "files": [
+            "/images/responsive/cases-lph-donate-figma-480.webp",
+            "/images/responsive/cases-lph-donate-figma-960.webp",
+            "/images/responsive/cases-lph-donate-figma-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/lph-sea-figma.webp",
+          "sourceSha256": "98cf95abf73f0c0102370e50530fad41505ed1480cab32eab107b67eec46131d",
+          "files": [
+            "/images/responsive/cases-lph-sea-figma-480.webp",
+            "/images/responsive/cases-lph-sea-figma-960.webp",
+            "/images/responsive/cases-lph-sea-figma-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/mapwhizz-architecture-stock.webp",
+          "sourceSha256": "15bbf4c390d7425f652e743ad40c3abcf15cd047cc8867e08751c37694884129",
+          "files": [
+            "/images/responsive/cases-mapwhizz-architecture-stock-480.webp",
+            "/images/responsive/cases-mapwhizz-architecture-stock-960.webp",
+            "/images/responsive/cases-mapwhizz-architecture-stock-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/mapwhizz-case-commute.webp",
+          "sourceSha256": "83dc0c691d40f183a6478df83672a9a74c1b164d3bcc1d44aea3afa860f706ac",
+          "files": [
+            "/images/responsive/cases-mapwhizz-case-commute-480.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/mapwhizz-case-company.webp",
+          "sourceSha256": "78fcd80bd9ed677c35a3e8f47cabbc32e3fb2ec560397cb6130af011c0a837aa",
+          "files": [
+            "/images/responsive/cases-mapwhizz-case-company-480.webp",
+            "/images/responsive/cases-mapwhizz-case-company-960.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/mapwhizz-case-postcodes.webp",
+          "sourceSha256": "eb1d3418710f99bc70f864a4e342c01a2901810aea6089e5ca8dc0be88b498a4",
+          "files": [
+            "/images/responsive/cases-mapwhizz-case-postcodes-480.webp",
+            "/images/responsive/cases-mapwhizz-case-postcodes-960.webp",
+            "/images/responsive/cases-mapwhizz-case-postcodes-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/mapwhizz-case-results.webp",
+          "sourceSha256": "3213cbddab6bf6f261f11f0e54138e50634ee39748e03897d04cd9c33d4f1f6c",
+          "files": [
+            "/images/responsive/cases-mapwhizz-case-results-480.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/mapwhizz-case-study-types.webp",
+          "sourceSha256": "8eb4a72ac2fc1d04b3c0c0b14861cae115c70922e624a7b82f276194d467f7d8",
+          "files": [
+            "/images/responsive/cases-mapwhizz-case-study-types-480.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/mapwhizz-report-detail-figma.webp",
+          "sourceSha256": "d3622dfd25839b6c2686f0f32609b1e598dcab24708795c7cba70714d6d8cf1d",
+          "files": [
+            "/images/responsive/cases-mapwhizz-report-detail-figma-480.webp",
+            "/images/responsive/cases-mapwhizz-report-detail-figma-960.webp"
+          ]
+        },
+        {
+          "source": "/images/cases/mapwhizz-thumbnail-graphs.webp",
+          "sourceSha256": "be277d648a4b56de65e7706a4f675643b41321393ada5c492fc9eedbcbb05971",
+          "files": [
+            "/images/responsive/cases-mapwhizz-thumbnail-graphs-480.webp"
+          ]
+        },
+        {
+          "source": "/images/coral-collaboration-poster.jpg",
+          "sourceSha256": "1576bb946eb646304a52da523948c5041b6848ba7a9303f990ec4adb3c6d1653",
+          "files": [
+            "/images/responsive/coral-collaboration-poster-480.webp",
+            "/images/responsive/coral-collaboration-poster-960.webp",
+            "/images/responsive/coral-collaboration-poster-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/czech-beer-alliance-brewery.jpg",
+          "sourceSha256": "10f984f00cfca93c25cfab4c85f6095f76200fdef040dadbc6d5d63374f227ff",
+          "files": [
+            "/images/responsive/czech-beer-alliance-brewery-480.webp",
+            "/images/responsive/czech-beer-alliance-brewery-960.webp",
+            "/images/responsive/czech-beer-alliance-brewery-1440.webp"
+          ]
+        },
+        {
+          "source": "/images/footer-studio-poster.jpg",
+          "sourceSha256": "c43f50f7e388a3b70d9bbdbe84c45e04389f0e61e025709ec7cceb9658434d0b",
+          "files": [
+            "/images/responsive/footer-studio-poster-480.webp",
+            "/images/responsive/footer-studio-poster-960.webp",
+            "/images/responsive/footer-studio-poster-1440.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

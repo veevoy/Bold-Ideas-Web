@@ -1,0 +1,150 @@
+{
+  "slug": "czech-beer-alliance",
+  "order": 4,
+  "published": true,
+  "name": "Czech Beer Alliance",
+  "headline": [
+    "Finding the pubs that are ready",
+    "for real Czech lager"
+  ],
+  "summary": "Czech Beer Alliance brings genuine Bohemian lager from independent Czech breweries to UK pubs and bottle shops. We built them an AI lead engine that finds, checks and profiles the right independent venues every day, so their team can spend its time pouring samples, not searching Instagram.",
+  "sector": "Independent beer · UK hospitality",
+  "serviceId": "ai-automation-starter",
+  "serviceLabel": "BoldLeads.ai · AI Lead Generation",
+  "scope": "Lead research, AI qualification & CRM integration",
+  "image": {
+    "src": "/images/czech-beer-alliance-brewery.jpg",
+    "alt": "A historic Czech brewery courtyard with illuminated stone and brick buildings at dusk.",
+    "width": 1920,
+    "height": 1280,
+    "position": "70% 65%",
+    "caption": "From Czech Beer Alliance’s brewery portfolio.",
+    "credit": {
+      "label": "Photo: Czech Beer Alliance",
+      "href": "https://czechbeeralliance.co.uk/"
+    }
+  },
+  "challenge": {
+    "title": "A great product, a needle-in-a-haystack market",
+    "paragraphs": [
+      "Until Czech Beer Alliance arrived, a UK pub couldn't order genuine Czech beer beyond the obvious mainstream brands. Their portfolio of nine independent breweries — from Bohemia Regent to Kutna Hora — is exactly what the best independent venues want. Finding those venues was the hard part.",
+      "The ideal customers are small and scattered: micropubs, bottle shops, boutique pub groups and collectives. Many live on Instagram and Facebook rather than in any trade directory. Spotting them meant scrolling hashtags and groups by hand, telling a pub's post from a fan's holiday pint, then digging out who owns the place and how to reach them.",
+      "With expansion in the North West planned, the team needed a steady flow of the right contacts in the right regions — without hiring someone to do it all day."
+    ],
+    "images": [
+      {
+        "src": "/images/cases/brewery-stock.webp",
+        "width": 2200,
+        "height": 1467,
+        "alt": "Copper brewing vessels in a brewery in Pilsen, Czech Republic.",
+        "credit": {
+          "label": "Marcel Gierschick / Pexels",
+          "href": "https://www.pexels.com/photo/modern-brewery-tanks-in-pilsen-czech-republic-35966972/"
+        }
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "title": "Define the right lead",
+      "description": "Sales knowledge became clear qualification rules for venue types and priority regions."
+    },
+    {
+      "title": "Build the daily research",
+      "description": "The system scans Instagram and Facebook, checks venues and creates ready-to-use profiles."
+    },
+    {
+      "title": "Bring leads into the CRM",
+      "description": "Checked profiles arrive in BoldLeads.ai, ready for the team to filter, follow up and track."
+    }
+  ],
+  "approach": [
+    {
+      "title": "A researcher that never stops scrolling",
+      "paragraphs": [
+        "We built a BoldLeads system that runs on a daily schedule. Each run scans fresh posts from the #UKCraftBeer hashtag on Instagram — reels, photos and text — and from the MicroPubAdventures community on Facebook.",
+        "An AI agent reads every post and decides: is this a business Czech Beer Alliance should talk to, or just someone enjoying a pint? For every real lead, it builds a ready-to-use profile:"
+      ],
+      "items": [
+        "Business name, segment (micropub, bottle shop, pub group) and full address",
+        "Website, phone number, and Instagram, Facebook and LinkedIn links",
+        "Owner or contact name, where public",
+        "A conversation starter pulled from the web, so the first message feels personal, not copy-pasted"
+      ],
+      "closingParagraphs": [
+        "Every lead lands straight in BoldLeads.ai, our lead generation tool with a built-in CRM. The same place that finds the leads also helps the team work them: filter by city, set statuses like “Meeting agreed” and see at a glance who to call next. No exports, no spreadsheets, no juggling tools."
+      ]
+    },
+    {
+      "title": "Built around their market, not a generic list",
+      "paragraphs": [
+        "A lead engine is only as good as its idea of a “good lead”. We spent the setup turning Czech Beer Alliance’s sales instinct into clear rules the AI follows:"
+      ],
+      "items": [
+        "In: independent micropubs, bottle shops, boutique pub groups and pub collectives — especially venues already championing Czech, German or world lager.",
+        "Out: importers and distributors. They're competitors, so the agent filters them out.",
+        "Where: priority regions are Manchester and Wrexham, Sheffield, Huddersfield and the North East, and London and Cambridgeshire."
+      ],
+      "closingParagraphs": [
+        "The demo also taught us something useful: leads from the micropub-focused Facebook community qualified at a higher rate than the broader Instagram hashtag. That's now shaping which sources we add next."
+      ],
+      "images": [
+        {
+          "src": "/images/czech-beer-alliance-brewery.jpg",
+          "alt": "A historic Czech brewery courtyard with illuminated stone and brick buildings at dusk.",
+          "width": 1920,
+          "height": 1280,
+          "position": "70% 65%",
+          "caption": "From Czech Beer Alliance’s brewery portfolio.",
+          "credit": {
+            "label": "Photo: Czech Beer Alliance",
+            "href": "https://czechbeeralliance.co.uk/"
+          }
+        }
+      ]
+    }
+  ],
+  "outcome": {
+    "summary": "Czech Beer Alliance now has a lead engine that works every day in the background.",
+    "paragraphs": [
+      "Each morning brings a fresh set of checked, fully profiled venues in their priority regions, ready to work on straight from BoldLeads.ai.",
+      "The work that used to take someone full days of scrolling and searching now runs on its own, for a fraction of the cost of a hire. And because the rules and sources are theirs, the system gets sharper as their market grows."
+    ],
+    "deliverables": [
+      "Daily lead research",
+      "Market-specific qualification",
+      "Ready-to-use profiles in BoldLeads.ai"
+    ]
+  },
+  "nextPhase": {
+    "title": "From a list of leads to a full outreach engine",
+    "paragraphs": [
+      "The first phase proved the idea. Next, we're building on it step by step, each piece scoped and agreed on its own:"
+    ],
+    "items": [
+      "No duplicates. Each new lead is checked against existing contacts before it's added.",
+      "Outreach people remember. Personalised physical cards via Cardly, and short AI video messages that greet each venue owner by name.",
+      "Event-ready campaigns. Prioritising Manchester venues ahead of a big match-day event, so the right pubs hear from Czech Beer Alliance first.",
+      "More sources. Trade press like the Morning Advertiser, more Facebook groups and industry sites."
+    ]
+  },
+  "callToAction": {
+    "title": "Want leads like these for your business?",
+    "body": "Book a free 30-minute consultation. We'll look at who you want to reach and show you what BoldLeads can find for you — with an honest answer on whether it's the right fit.",
+    "label": "Book your free consultation"
+  },
+  "hero": {
+    "background": {
+      "src": "/images/czech-beer-alliance-brewery.jpg",
+      "alt": "A historic Czech brewery courtyard with illuminated stone and brick buildings at dusk.",
+      "width": 1920,
+      "height": 1280,
+      "position": "70% 65%",
+      "caption": "From Czech Beer Alliance’s brewery portfolio.",
+      "credit": {
+        "label": "Photo: Czech Beer Alliance",
+        "href": "https://czechbeeralliance.co.uk/"
+      }
+    }
+  }
+}

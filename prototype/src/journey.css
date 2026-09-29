@@ -1,0 +1,10 @@
+.home-journey { background: var(--paper); color: var(--ink); --line: color-mix(in srgb, currentColor 24%, transparent); }
+.home-journey .about-benefit-copy p { color: inherit; }
+.home-journey .about-benefit-icon { color: inherit; }
+.home-journey .about-section { padding-bottom: clamp(80px, 8vw, 128px); }
+.home-journey--static .delivery-range { background: var(--ink); color: var(--paper); }
+.brand-junction { position: absolute; width: 19px; height: 19px; fill: var(--junction-color, var(--red)); pointer-events: none; z-index: 1; }
+@media (max-width: 699px) {
+  .home-journey .about-section { padding-bottom: 72px; }
+  .brand-junction { width: 16px; height: 16px; }
+}

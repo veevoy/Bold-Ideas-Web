@@ -1,0 +1,50 @@
+/* One centred reading sequence: headline, supporting copy, then the film. */
+.process-story-intro { padding-block: clamp(80px, 9vw, 128px) 48px; text-align: center; }
+.process-story-intro h2 { font-size: clamp(32px, 3.2vw, 48px); font-weight: 350; line-height: 1.15; letter-spacing: -.025em; text-wrap: balance; }
+.process-scroll-story { position: relative; height: 400svh; }
+.process-story-stage { position: sticky; top: 0; height: 100svh; display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 24px; padding-block: clamp(112px, 14svh, 152px) 32px; overflow: clip; }
+.process-story-copy { display: grid; text-align: center; }
+.process-story-headings, .process-story-subtitles { display: grid; }
+.process-story-heading, .process-story-measure, .process-story-subtitle { grid-area: 1 / 1; width: 100%; }
+.process-story-measure { visibility: hidden; pointer-events: none; }
+.process-story-headings h3, .process-story-still h3 { max-width: 1040px; margin-inline: auto; font-size: clamp(40px, 4.8vw, 76px); font-weight: 350; line-height: 1.06; letter-spacing: -.035em; text-wrap: balance; }
+.process-story-heading .reveal-word:last-child .reveal-char:last-child, .process-story-still h3 > span { color: var(--red); }
+.process-story-subtitles p, .process-story-still > p { max-width: 62ch; margin: 24px auto 0; font-size: clamp(19px, 1.45vw, 22px); line-height: 1.5; text-wrap: pretty; }
+.process-story-media { min-width: 0; min-height: 0; display: grid; place-items: center; container-type: size; }
+.process-film { position: relative; width: min(100cqw, calc(100cqh * 16 / 9)); aspect-ratio: 16 / 9; background: var(--ink); isolation: isolate; mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent), linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent); mask-composite: intersect; }
+.process-film img, .process-film video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; filter: contrast(1.4); mix-blend-mode: lighten; }
+.process-film video { position: absolute; inset: 0; }
+.process-story-readable { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.process-story-static { padding-block: 16px 32px; }
+.process-story-still { display: grid; justify-items: center; text-align: center; padding-block: 48px; }
+.process-story-still-media { width: min(100%, 1080px); margin-top: 32px; }
+.process-story-still-media .process-film { width: 100%; }
+@media (max-width: 699px) {
+  .process-scroll-story { height: 420svh; }
+  /* Centre the compact copy + film group below the navigation. The media row
+     uses the film's natural ratio, and may shrink on shorter viewports. */
+  .process-story-stage {
+    padding-block: 96px 32px;
+    grid-template-rows: auto minmax(0, calc((100vw - 16px) * 9 / 16));
+    align-content: center;
+    gap: 16px;
+  }
+  /* Keep chapter heights stable, but put short titles next to their subtitle. */
+  .process-story-headings { align-items: end; }
+  .process-story-headings h3 { max-width: 18ch; font-size: clamp(34px, 8.7vw, 48px); line-height: 1.08; }
+  .process-story-subtitles p { max-width: 34ch; font-size: 17px; line-height: 1.45; margin-top: 12px; }
+  .process-story-media { padding-inline: 8px; align-items: start; }
+  .process-story-intro { padding-block: 72px 24px; }
+  .process-story-static { padding-block: 0 16px; }
+  .process-story-still { padding-block: 40px; }
+  .process-story-still h3 { max-width: 20ch; font-size: clamp(34px, 8vw, 44px); line-height: 1.08; }
+  .process-story-still > p { font-size: 18px; margin-top: 20px; }
+  .process-story-still-media { margin-top: 24px; }
+}
+@media (max-height: 520px) and (min-width: 600px) {
+  .process-story-stage { padding-block: 88px 16px; grid-template-columns: 1fr 1fr; grid-template-rows: minmax(0, 1fr); gap: 16px; align-items: center; }
+  .process-story-copy { padding-right: 0; }
+  .process-story-headings h3 { font-size: 30px; }
+  .process-story-subtitles p { font-size: 15px; margin-top: 14px; }
+  .process-story-media { height: 100%; padding-inline: 0 16px; }
+}

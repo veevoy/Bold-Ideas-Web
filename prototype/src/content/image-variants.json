@@ -1,0 +1,546 @@
+{
+  "/images/audiences/charities.jpg": [
+    {
+      "src": "/images/responsive/audiences-charities-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/audiences-charities-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/audiences/charities.jpg",
+      "width": 1280
+    }
+  ],
+  "/images/audiences/climate-canyon.jpg": [
+    {
+      "src": "/images/responsive/audiences-climate-canyon-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/audiences-climate-canyon-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/audiences/climate-canyon.jpg",
+      "width": 1280
+    }
+  ],
+  "/images/audiences/innovators-conference.jpg": [
+    {
+      "src": "/images/responsive/audiences-innovators-conference-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/audiences-innovators-conference-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/audiences/innovators-conference.jpg",
+      "width": 1280
+    }
+  ],
+  "/images/audiences/wellbeing-motion.jpg": [
+    {
+      "src": "/images/responsive/audiences-wellbeing-motion-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/audiences-wellbeing-motion-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/audiences/wellbeing-motion.jpg",
+      "width": 1280
+    }
+  ],
+  "/images/bold-story-4k-built.webp": [
+    {
+      "src": "/images/responsive/bold-story-4k-built-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/bold-story-4k-built-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/bold-story-4k-built-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/bold-story-4k-built.webp",
+      "width": 1920
+    }
+  ],
+  "/images/bold-story-4k-impact.webp": [
+    {
+      "src": "/images/responsive/bold-story-4k-impact-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/bold-story-4k-impact-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/bold-story-4k-impact-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/bold-story-4k-impact.webp",
+      "width": 1920
+    }
+  ],
+  "/images/bold-story-4k-opening.webp": [
+    {
+      "src": "/images/responsive/bold-story-4k-opening-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/bold-story-4k-opening-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/bold-story-4k-opening-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/bold-story-4k-opening.webp",
+      "width": 1920
+    }
+  ],
+  "/images/bridge-4k-complete.webp": [
+    {
+      "src": "/images/responsive/bridge-4k-complete-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/bridge-4k-complete-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/bridge-4k-complete-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/bridge-4k-complete.webp",
+      "width": 1920
+    }
+  ],
+  "/images/bridge-4k-opening.webp": [
+    {
+      "src": "/images/responsive/bridge-4k-opening-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/bridge-4k-opening-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/bridge-4k-opening-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/bridge-4k-opening.webp",
+      "width": 1920
+    }
+  ],
+  "/images/bridge-4k-options.webp": [
+    {
+      "src": "/images/responsive/bridge-4k-options-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/bridge-4k-options-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/bridge-4k-options-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/bridge-4k-options.webp",
+      "width": 1920
+    }
+  ],
+  "/images/cases/brewery-stock.webp": [
+    {
+      "src": "/images/responsive/cases-brewery-stock-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-brewery-stock-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-brewery-stock-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/brewery-stock.webp",
+      "width": 2200
+    }
+  ],
+  "/images/cases/kinable-care-plans.webp": [
+    {
+      "src": "/images/cases/kinable-care-plans.webp",
+      "width": 1168
+    }
+  ],
+  "/images/cases/kinable-daily-care-redacted.webp": [
+    {
+      "src": "/images/responsive/cases-kinable-daily-care-redacted-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-kinable-daily-care-redacted-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/cases/kinable-daily-care-redacted.webp",
+      "width": 1170
+    }
+  ],
+  "/images/cases/kinable-onboarding.webp": [
+    {
+      "src": "/images/cases/kinable-onboarding.webp",
+      "width": 1170
+    }
+  ],
+  "/images/cases/kinable-sky-stock.webp": [
+    {
+      "src": "/images/responsive/cases-kinable-sky-stock-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-kinable-sky-stock-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-kinable-sky-stock-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/kinable-sky-stock.webp",
+      "width": 2000
+    }
+  ],
+  "/images/cases/lph-case-about.webp": [
+    {
+      "src": "/images/responsive/cases-lph-case-about-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-about-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/cases/lph-case-about.webp",
+      "width": 964
+    }
+  ],
+  "/images/cases/lph-case-dashboard-corrected.webp": [
+    {
+      "src": "/images/responsive/cases-lph-case-dashboard-corrected-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-dashboard-corrected-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-dashboard-corrected-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/lph-case-dashboard-corrected.webp",
+      "width": 2050
+    }
+  ],
+  "/images/cases/lph-case-donation.webp": [
+    {
+      "src": "/images/responsive/cases-lph-case-donation-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-donation-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-donation-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/lph-case-donation.webp",
+      "width": 2050
+    }
+  ],
+  "/images/cases/lph-case-events-projects.webp": [
+    {
+      "src": "/images/responsive/cases-lph-case-events-projects-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-events-projects-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-events-projects-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/lph-case-events-projects.webp",
+      "width": 2050
+    }
+  ],
+  "/images/cases/lph-case-global-map.webp": [
+    {
+      "src": "/images/responsive/cases-lph-case-global-map-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/cases/lph-case-global-map.webp",
+      "width": 964
+    }
+  ],
+  "/images/cases/lph-case-sign-in.webp": [
+    {
+      "src": "/images/responsive/cases-lph-case-sign-in-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-sign-in-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/cases/lph-case-sign-in.webp",
+      "width": 964
+    }
+  ],
+  "/images/cases/lph-case-song.webp": [
+    {
+      "src": "/images/responsive/cases-lph-case-song-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-song-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/cases/lph-case-song.webp",
+      "width": 964
+    }
+  ],
+  "/images/cases/lph-case-volunteering.webp": [
+    {
+      "src": "/images/responsive/cases-lph-case-volunteering-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-volunteering-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-lph-case-volunteering-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/lph-case-volunteering.webp",
+      "width": 2050
+    }
+  ],
+  "/images/cases/lph-donate-figma.webp": [
+    {
+      "src": "/images/responsive/cases-lph-donate-figma-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-donate-figma-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-lph-donate-figma-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/lph-donate-figma.webp",
+      "width": 1512
+    }
+  ],
+  "/images/cases/lph-sea-figma.webp": [
+    {
+      "src": "/images/responsive/cases-lph-sea-figma-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-lph-sea-figma-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-lph-sea-figma-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/lph-sea-figma.webp",
+      "width": 2050
+    }
+  ],
+  "/images/cases/mapwhizz-architecture-stock.webp": [
+    {
+      "src": "/images/responsive/cases-mapwhizz-architecture-stock-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-mapwhizz-architecture-stock-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-mapwhizz-architecture-stock-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/mapwhizz-architecture-stock.webp",
+      "width": 2000
+    }
+  ],
+  "/images/cases/mapwhizz-case-commute.webp": [
+    {
+      "src": "/images/responsive/cases-mapwhizz-case-commute-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/cases/mapwhizz-case-commute.webp",
+      "width": 2050
+    }
+  ],
+  "/images/cases/mapwhizz-case-company.webp": [
+    {
+      "src": "/images/responsive/cases-mapwhizz-case-company-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-mapwhizz-case-company-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/cases/mapwhizz-case-company.webp",
+      "width": 2050
+    }
+  ],
+  "/images/cases/mapwhizz-case-postcodes.webp": [
+    {
+      "src": "/images/responsive/cases-mapwhizz-case-postcodes-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-mapwhizz-case-postcodes-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/cases-mapwhizz-case-postcodes-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/cases/mapwhizz-case-postcodes.webp",
+      "width": 2050
+    }
+  ],
+  "/images/cases/mapwhizz-case-results.webp": [
+    {
+      "src": "/images/responsive/cases-mapwhizz-case-results-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/cases/mapwhizz-case-results.webp",
+      "width": 964
+    }
+  ],
+  "/images/cases/mapwhizz-case-study-types.webp": [
+    {
+      "src": "/images/responsive/cases-mapwhizz-case-study-types-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/cases/mapwhizz-case-study-types.webp",
+      "width": 964
+    }
+  ],
+  "/images/cases/mapwhizz-report-detail-figma.webp": [
+    {
+      "src": "/images/responsive/cases-mapwhizz-report-detail-figma-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/cases-mapwhizz-report-detail-figma-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/cases/mapwhizz-report-detail-figma.webp",
+      "width": 1512
+    }
+  ],
+  "/images/cases/mapwhizz-thumbnail-graphs.webp": [
+    {
+      "src": "/images/responsive/cases-mapwhizz-thumbnail-graphs-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/cases/mapwhizz-thumbnail-graphs.webp",
+      "width": 1264
+    }
+  ],
+  "/images/coral-collaboration-poster.jpg": [
+    {
+      "src": "/images/responsive/coral-collaboration-poster-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/coral-collaboration-poster-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/coral-collaboration-poster-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/coral-collaboration-poster.jpg",
+      "width": 1920
+    }
+  ],
+  "/images/czech-beer-alliance-brewery.jpg": [
+    {
+      "src": "/images/responsive/czech-beer-alliance-brewery-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/czech-beer-alliance-brewery-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/czech-beer-alliance-brewery-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/czech-beer-alliance-brewery.jpg",
+      "width": 1920
+    }
+  ],
+  "/images/footer-studio-poster.jpg": [
+    {
+      "src": "/images/responsive/footer-studio-poster-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/images/responsive/footer-studio-poster-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/images/responsive/footer-studio-poster-1440.webp",
+      "width": 1440
+    },
+    {
+      "src": "/images/footer-studio-poster.jpg",
+      "width": 1920
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "slug": "love-peace-harmony",
+  "order": 2,
+  "published": true,
+  "name": "Love Peace Harmony",
+  "headline": [
+    "From an idea-stage crossroads",
+    "to a de-risked plan."
+  ],
+  "summary": "A global non-profit needed to define a new member platform. A focused workshop, a working prototype and a clear scope-versus-budget plan made the next decision possible.",
+  "sector": "Charity & community",
+  "serviceId": "proof-of-product",
+  "scope": "Product definition, prototyping & technical planning",
+  "image": {
+    "src": "/images/cases/lph-donate-figma.webp",
+    "width": 1512,
+    "height": 984,
+    "alt": "Love Peace Harmony donation page with gift amounts and donor details.",
+    "credit": {
+      "label": "Client-supplied Figma design",
+      "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-11471"
+    },
+    "presentation": "screen"
+  },
+  "challenge": {
+    "title": "Knowing the mission, but not the technical build.",
+    "paragraphs": [
+      "Love Peace Harmony was at the idea stage of a major decision: a new member platform. The team knew its goals inside out but had no way to judge the technical build.",
+      "They needed to know what to build, what it would cost, and how to reach a working first version without risking budget on the wrong product."
+    ],
+    "showcases": [
+      {
+        "label": "The Love Peace Harmony member dashboard",
+        "background": "#F8F3EC",
+        "layout": "artwork",
+        "items": [
+          {
+            "image": {
+              "src": "/images/cases/lph-case-dashboard-corrected.webp",
+              "width": 2050,
+              "height": 1318,
+              "alt": "Love Peace Harmony member dashboard with a course, upcoming events and community updates, on the supplied sky background.",
+              "credit": {
+                "label": "Client-prepared Figma composition",
+                "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-9607"
+              }
+            },
+            "crop": {
+              "x": 0,
+              "y": 0,
+              "width": 2050,
+              "height": 1318
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "title": "A focused workshop",
+      "description": "Business-first questions defined the platform from the member’s point of view."
+    },
+    {
+      "title": "A clear specification",
+      "description": "The right first version, grounded in the organisation’s business logic and actual budget."
+    },
+    {
+      "title": "A working prototype",
+      "description": "A clickable prototype tested real use cases before committing to a full build."
+    },
+    {
+      "title": "Scope and roadmap",
+      "description": "A technical blueprint and realistic time and cost plan for the next phase."
+    }
+  ],
+  "approach": [
+    {
+      "title": "A focused, business-first workshop.",
+      "paragraphs": [
+        "We led the decision-makers through business-first questions, capturing the product from the member’s point of view — what people click, see and do — rather than in technical language."
+      ],
+      "showcases": [
+        {
+          "label": "The Love Peace Harmony story and global mission",
+          "background": "#F8F3EC",
+          "layout": "artwork-pair",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/lph-case-about.webp",
+                "width": 964,
+                "height": 1318,
+                "alt": "About Love Peace Harmony: introduction, mission and the organisation’s timeline, in the supplied gold composition.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-15726"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 964,
+                "height": 1318
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/lph-case-song.webp",
+                "width": 964,
+                "height": 1318,
+                "alt": "The Love Peace Harmony song and its international reach, in the supplied gold composition.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-15728"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 964,
+                "height": 1318
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A specification sized to the real budget.",
+      "paragraphs": [
+        "We hand-wrote a clear, functional specification for the right first version, built on the organisation’s real business logic and sized to its actual budget."
+      ],
+      "showcases": [
+        {
+          "label": "Supporting Love Peace Harmony with a donation",
+          "background": "#F8F3EC",
+          "layout": "artwork",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/lph-case-donation.webp",
+                "width": 2050,
+                "height": 1318,
+                "alt": "Love Peace Harmony donation page with gift amounts and donor details, on the supplied cream background.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-10611"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 2050,
+                "height": 1318
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing the idea through a working prototype.",
+      "paragraphs": [
+        "A controlled, clickable prototype validated the real use cases and tested the interaction before a single pound went into a full build."
+      ],
+      "showcases": [
+        {
+          "label": "Volunteering with Love Peace Harmony",
+          "background": "#F8F3EC",
+          "layout": "artwork",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/lph-case-volunteering.webp",
+                "width": 2050,
+                "height": 1318,
+                "alt": "Love Peace Harmony volunteering page and volunteer profiles, over the supplied forest background.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-10841"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 2050,
+                "height": 1318
+              }
+            }
+          ]
+        },
+        {
+          "label": "Explore the Global Map and join the community",
+          "background": "#F8F3EC",
+          "layout": "artwork-pair",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/lph-case-global-map.webp",
+                "width": 964,
+                "height": 1318,
+                "alt": "Love Peace Harmony Global Map with country filters and project locations, in the supplied forest composition.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-11197"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 964,
+                "height": 1318
+              }
+            },
+            {
+              "image": {
+                "src": "/images/cases/lph-case-sign-in.webp",
+                "width": 964,
+                "height": 1318,
+                "alt": "Love Peace Harmony member sign-in with community photography, over the supplied forest background.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-11201"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 964,
+                "height": 1318
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A transparent scope-versus-budget plan.",
+      "paragraphs": [
+        "We paired a transparent technical blueprint with a realistic roadmap of the time and money the next phase would take, so the team could make an informed decision."
+      ],
+      "showcases": [
+        {
+          "label": "Events and projects across the community",
+          "background": "#F8F3EC",
+          "layout": "artwork",
+          "items": [
+            {
+              "image": {
+                "src": "/images/cases/lph-case-events-projects.webp",
+                "width": 2050,
+                "height": 1318,
+                "alt": "Love Peace Harmony calendar of events and project pages together, over the supplied sky background.",
+                "credit": {
+                  "label": "Client-prepared Figma composition",
+                  "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-10838"
+                }
+              },
+              "crop": {
+                "x": 0,
+                "y": 0,
+                "width": 2050,
+                "height": 1318
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outcome": {
+    "summary": "In a few weeks, the team had a defined specification, a working prototype and a clear scope-versus-budget recommendation.",
+    "deliverables": [
+      "MVP specification",
+      "Working prototype",
+      "Technical blueprint & roadmap"
+    ],
+    "next": "A realistic roadmap of the time and money for the next phase: the full build.",
+    "paragraphs": [
+      "Love Peace Harmony knew exactly what to build and what it would cost, with confidence in the foundations for the next phase."
+    ]
+  },
+  "hero": {
+    "background": {
+      "src": "/images/cases/lph-sea-figma.webp",
+      "alt": "A calm sea beneath a softly coloured blue and pink sky.",
+      "width": 2050,
+      "height": 1318,
+      "position": "50% 50%",
+      "illustrative": true,
+      "credit": {
+        "label": "Background supplied in the client’s Figma composition",
+        "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-15724"
+      }
+    },
+    "screen": {
+      "src": "/images/cases/lph-donate-figma.webp",
+      "width": 1512,
+      "height": 984,
+      "alt": "Love Peace Harmony donation page with gift amounts and donor details.",
+      "credit": {
+        "label": "Client-supplied Figma design",
+        "href": "https://www.figma.com/design/881tXtHnSBHC0QBBBSfBPn/LPH-Web?node-id=1935-11471"
+      },
+      "presentation": "screen"
+    }
+  },
+  "thumbnailTone": "light"
+}
