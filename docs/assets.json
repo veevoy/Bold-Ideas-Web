@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "scope": "Active shipped media only. Provenance carried forward from the project records, not a new rights audit. Original downloaded/generated source files are not required at runtime.",
   "groups": [
     {
@@ -851,6 +851,94 @@
           ]
         }
       ]
+    },
+    {
+      "id": "experience-czech-beer-alliance",
+      "usage": "Homepage experience logo strip",
+      "files": [
+        "/brand/experience/czech-beer-alliance.png"
+      ],
+      "source": "User-supplied transparent CBA logo, 30 September 2026 (codex-clipboard-c9910244-2a09-4038-a902-1da0c9f12eb4.png).",
+      "notes": "Original PNG unchanged. The existing strip CSS renders it in white monochrome, consistently with other marks."
+    },
+    {
+      "id": "mobile-scroll-sequences",
+      "usage": "Mobile/touch scroll-driven story and bridge, independent of video playback",
+      "files": [
+        "/video/frames/story/000.webp",
+        "/video/frames/story/001.webp",
+        "/video/frames/story/002.webp",
+        "/video/frames/story/003.webp",
+        "/video/frames/story/004.webp",
+        "/video/frames/story/005.webp",
+        "/video/frames/story/006.webp",
+        "/video/frames/story/007.webp",
+        "/video/frames/story/008.webp",
+        "/video/frames/story/009.webp",
+        "/video/frames/story/010.webp",
+        "/video/frames/story/011.webp",
+        "/video/frames/story/012.webp",
+        "/video/frames/story/013.webp",
+        "/video/frames/story/014.webp",
+        "/video/frames/story/015.webp",
+        "/video/frames/story/016.webp",
+        "/video/frames/story/017.webp",
+        "/video/frames/story/018.webp",
+        "/video/frames/story/019.webp",
+        "/video/frames/story/020.webp",
+        "/video/frames/story/021.webp",
+        "/video/frames/story/022.webp",
+        "/video/frames/story/023.webp",
+        "/video/frames/story/024.webp",
+        "/video/frames/story/025.webp",
+        "/video/frames/story/026.webp",
+        "/video/frames/story/027.webp",
+        "/video/frames/story/028.webp",
+        "/video/frames/story/029.webp",
+        "/video/frames/story/030.webp",
+        "/video/frames/story/031.webp",
+        "/video/frames/story/032.webp",
+        "/video/frames/story/033.webp",
+        "/video/frames/story/034.webp",
+        "/video/frames/story/035.webp",
+        "/video/frames/story/036.webp",
+        "/video/frames/bridge/000.webp",
+        "/video/frames/bridge/001.webp",
+        "/video/frames/bridge/002.webp",
+        "/video/frames/bridge/003.webp",
+        "/video/frames/bridge/004.webp",
+        "/video/frames/bridge/005.webp",
+        "/video/frames/bridge/006.webp",
+        "/video/frames/bridge/007.webp",
+        "/video/frames/bridge/008.webp",
+        "/video/frames/bridge/009.webp",
+        "/video/frames/bridge/010.webp",
+        "/video/frames/bridge/011.webp",
+        "/video/frames/bridge/012.webp",
+        "/video/frames/bridge/013.webp",
+        "/video/frames/bridge/014.webp",
+        "/video/frames/bridge/015.webp",
+        "/video/frames/bridge/016.webp",
+        "/video/frames/bridge/017.webp",
+        "/video/frames/bridge/018.webp",
+        "/video/frames/bridge/019.webp",
+        "/video/frames/bridge/020.webp",
+        "/video/frames/bridge/021.webp",
+        "/video/frames/bridge/022.webp",
+        "/video/frames/bridge/023.webp",
+        "/video/frames/bridge/024.webp"
+      ],
+      "source": "Existing user-supplied scroll films, same edit and timing as the mobile MP4s.",
+      "processing": "ffmpeg/sharp: 20fps, 640×360px frames packed into 4×2 WebP sheets at quality 70. Lazy loading, two concurrent downloads and three decoded sheets per section. The last painted frame remains visible while a new sheet loads."
+    },
+    {
+      "id": "boldleads-identity",
+      "usage": "BoldLeads product offer on homepage and services",
+      "files": [
+        "/brand/boldleads-dark-color.svg"
+      ],
+      "source": "User-supplied boldleads_dark_color.svg, 30 September 2026",
+      "notes": "Original paths and colours preserved; viewBox trims empty canvas for alignment with other package headings."
     }
   ]
 }

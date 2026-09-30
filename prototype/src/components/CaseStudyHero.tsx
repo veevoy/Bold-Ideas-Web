@@ -1,21 +1,14 @@
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
 import type { ProjectCaseStudy } from '../case-study-model';
 import { TextReveal } from './TextReveal';
-import { useSiteMotion } from './SiteMotion';
 import { responsiveImage } from '../responsive-images';
 
 export function CaseStudyHero({ study }: { study: ProjectCaseStudy }) {
-  const hero = useRef<HTMLElement>(null);
-  const { reduced } = useSiteMotion();
-  const { scrollYProgress } = useScroll({ target: hero, offset: ['start start', 'end start'] });
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
   const background = study.hero?.background ?? study.image;
   const screen = study.hero?.screen;
   const foreground = study.hero ? screen : study.image;
   const portrait = screen && screen.height > screen.width;
-  return <header ref={hero} className="case-hero" data-nav-tone="dark" data-background-only={!foreground || undefined}>
-    <motion.img className="case-hero-background" data-soft-background={study.slug === 'kinable' || undefined} src={background.src} {...responsiveImage(background.src, '100vw')} alt={background.illustrative ? '' : background.alt} width={background.width} height={background.height} style={{ objectPosition: background.position, y: reduced ? 0 : backgroundY }} fetchPriority="high" decoding="async" />
+  return <header className="case-hero" data-nav-tone="dark" data-background-only={!foreground || undefined}>
+    <img className="case-hero-background" data-soft-background={study.slug === 'kinable' || undefined} src={background.src} {...responsiveImage(background.src, '100vw')} alt={background.illustrative ? '' : background.alt} width={background.width} height={background.height} style={{ objectPosition: background.position }} fetchPriority="high" decoding="async" />
     <div className="case-hero-shade" aria-hidden="true" />
     <div className="case-hero-content wrap">
       <div className="case-hero-heading">

@@ -5,6 +5,7 @@ import { TextReveal } from './TextReveal';
 import { needCopy, ServiceScope, type ServiceFinderProps } from './ServiceFinder';
 import { useRef } from 'react';
 import { usePageEntrance } from './usePageEntrance';
+import { BoldLeadsPackage } from './BoldLeadsPackage';
 
 export function ServicePackagesPage({ openServices, onServiceToggle }: ServiceFinderProps) {
   const page = useRef<HTMLElement>(null);
@@ -35,6 +36,7 @@ export function ServicePackagesPage({ openServices, onServiceToggle }: ServiceFi
               </video>
             } /></Disclosure>;
           })}
+          {need.id === 'ai' && <BoldLeadsPackage headingAs="h3" open={openServices.has('bold-leads')} onOpenChange={open => onServiceToggle('bold-leads', open)} />}
           {need.id === 'finish' && <p className="package-qualification">Diagnosis and audit fees cover those stages. Further implementation is agreed separately.</p>}
         </div>
       </section>)}

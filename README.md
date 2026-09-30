@@ -1,8 +1,8 @@
 # Bold Ideas Consulting — website handoff
 
-Responsive website built with React 19, TypeScript, Vite 6 and Motion. This is the current implementation as of 29 September 2026, with the approved-in-conversation visual direction and supplied videos. Preparing this package does not publish the site.
+Responsive website built with React 19, TypeScript, Vite 6 and Motion. This is the current implementation as of 30 September 2026, with the approved-in-conversation visual direction and supplied videos. Preparing this package does not publish the site.
 
-The client preview was refreshed with the current version at the user's request on 29 September 2026: [open preview](https://bold-ideas-client-preview.twenntyonee.chatgpt.site). Future changes are **local only** until explicitly authorised for publication; see [deployment record](docs/DEPLOYMENT.md).
+The client preview was refreshed with the current version at the user's request on 30 September 2026: [open preview](https://bold-ideas-client-preview.twenntyonee.chatgpt.site). The requested source repository is [veevoy/Bold-Ideas-Web](https://github.com/veevoy/Bold-Ideas-Web). Future changes are **local only** until explicitly authorised for publication; see [deployment record](docs/DEPLOYMENT.md).
 
 ## Start locally
 
@@ -31,7 +31,7 @@ Build validates case-study content and the public asset inventory. It writes the
 
 ## What is included
 
-- Homepage, six services in expandable cards, four audience backgrounds, two scroll-driven stories and video footer.
+- Homepage, six consulting services plus the separate BoldLeads product disclosure, four audience backgrounds, two scroll-driven stories and video footer.
 - Case-study index at `/case-studies` and full service-package list at `/services`, using the same data as the homepage.
 - Shared case-study template for Kinable, Love Peace Harmony, Mapwhizz and Czech Beer Alliance at `/work/:slug`.
 - Full testimonial page at `/testimonials`.

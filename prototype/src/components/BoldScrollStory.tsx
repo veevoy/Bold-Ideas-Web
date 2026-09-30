@@ -6,6 +6,8 @@ import { whyCopy } from '../why-content';
 import { attachScrollVideo } from '../scroll-video';
 import { useScrollVideoSource } from './useScrollVideoSource';
 import { responsiveImage, posterImage, gallerySizes } from '../responsive-images';
+import { MobileScrollSequence } from './MobileScrollSequence';
+import sequences from '../content/scroll-sequences.json';
 
 const chapters = [
   { text: whyCopy.title, notes: [whyCopy.ideaLead, whyCopy.ideaFit], poster: '/images/bold-story-4k-opening.webp' },
@@ -49,6 +51,7 @@ function AnimatedStory({ onError }: { onError: () => void }) {
   const video = useRef<HTMLVideoElement>(null);
   const [load, setLoad] = useState(false);
   const source = useScrollVideoSource('/video/bold-story-scroll-4k.mp4', '/video/bold-story-scroll-mobile.mp4');
+  const mobile = source.includes('-mobile');
   const [{ index: chapter, visit }, setChapter] = useState({ index: 0, visit: 0 });
   const travel = useMotionValue(1);
   const { scrollYProgress } = useScroll({ target: section, offset: ['start start', 'end end'] });
@@ -112,7 +115,12 @@ function AnimatedStory({ onError }: { onError: () => void }) {
       </div>
       <div className="bold-story-scene wrap" aria-hidden="true">
         <div className="bold-story-media">
-          <video ref={video} src={load ? source : undefined} poster={posterImage(chapters[0].poster, source.includes('-mobile') ? 960 : 1920)} width="3840" height="2160" muted playsInline preload={load ? 'auto' : 'none'} tabIndex={-1} disablePictureInPicture onError={onError} />
+          {mobile ? <MobileScrollSequence sequence={sequences.story} poster={posterImage(chapters[0].poster, 960)} time={filmTime}
+            onFrame={decodedTime => {
+              const index = decodedTime < 3.6 ? 0 : decodedTime < 10.7 ? 1 : 2;
+              setChapter(current => current.index === index ? current : { index, visit: current.visit + 1 });
+            }} onError={onError} />
+            : <video ref={video} src={load ? source : undefined} poster={posterImage(chapters[0].poster, 1920)} width="3840" height="2160" muted playsInline preload={load ? 'auto' : 'none'} tabIndex={-1} disablePictureInPicture onError={onError} />}
         </div>
         {[0, 1].map(side => <div className={`bold-story-note bold-story-note-${side}`} key={side}>
           {/* Stacked notes reserve the longest text, so the film never jumps. */}

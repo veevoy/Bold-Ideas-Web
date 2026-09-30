@@ -50,9 +50,9 @@ export function Testimonials() {
           {homepageTestimonials.map((item, index) => <button key={item.id} ref={element => { controls.current[index] = element; }} type="button" aria-pressed={active === index} aria-controls="testimonial-active" aria-label={`${index + 1} of ${homepageTestimonials.length}: ${item.name}`} onClick={() => select(index)}><span /></button>)}
         </div>
         <div className="testimonial-stage" id="testimonial-active">
-          {homepageTestimonials.map((item, index) => <motion.figure key={item.id} className="testimonial-slide" data-active={active === index} aria-hidden={active !== index} initial={false} animate={{ opacity: active === index ? 1 : 0, y: reduced || active === index ? 0 : 12 }} transition={{ duration: reduced ? 0 : .4, ease: [.22, 1, .36, 1] }}>
-            <TestimonialQuote quote={item.quote} /><TestimonialAuthor testimonial={item} />
-          </motion.figure>)}
+          <motion.figure key={slide.id} className="testimonial-slide" initial={{ opacity: reduced ? 1 : 0 }} animate={{ opacity: 1 }} transition={{ duration: reduced ? 0 : .3 }}>
+            <TestimonialQuote quote={slide.quote} /><TestimonialAuthor testimonial={slide} />
+          </motion.figure>
         </div>
         <p className="testimonial-announcement" role="status" aria-live="polite" aria-atomic="true">Testimonial {active + 1} of {homepageTestimonials.length}: {slide.name}.</p>
         <div className="testimonial-bottom">

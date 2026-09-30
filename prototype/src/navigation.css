@@ -14,7 +14,8 @@
 .navigation--glass.menu-is-open { background: var(--nav-surface); color: var(--ink); }
 
 .navigation--expanding {
-  width: 620px;
+  /* Logo + measured actions + two 32px gaps + 18px/7px shell padding. */
+  width: calc(112px + var(--nav-actions-width, 361px) + 64px + 25px);
   transition: width .6s var(--ease), padding .6s var(--ease), top .6s var(--ease), background-color .24s ease, color .24s ease, border-radius .4s ease, box-shadow .4s ease;
 }
 .navigation--expanding .nav-row { justify-content: space-between; }
@@ -22,7 +23,8 @@
 .navigation--expanding .site-logo img { transition: width .6s var(--ease), height .6s var(--ease); }
 @media (min-width: 700px) {
   .navigation--expanding[data-expanded="true"] .site-logo img { width: 142px; height: 47px; }
-  .navigation--expanding[data-expanded="true"] .desktop-nav { margin-left: auto; }
+  /* Keep links attached to the CTA while the container animates its width. */
+  .navigation--expanding .desktop-nav { margin-left: auto; }
 }
 .navigation--expanding[data-expanded="true"] {
   width: calc(min(100%, var(--content-max)) - 2 * var(--content-gutter));

@@ -6,6 +6,7 @@ const brands = [
   { name: 'Mapwhizz', image: 'mapwhizz.svg', width: 120 },
   { name: 'Love Peace Harmony', image: 'lph.svg', width: 72 },
   { name: 'Kinable', image: 'kinable.svg', width: 132 },
+  { name: 'Czech Beer Alliance', image: 'czech-beer-alliance.png', width: 140 },
 ];
 
 export function ExperienceMarquee() {

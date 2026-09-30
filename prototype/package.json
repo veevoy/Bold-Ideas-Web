@@ -12,7 +12,8 @@
     "validate:content": "node scripts/validate-case-studies.mjs",
     "test:content": "node --test tests/case-studies.test.mjs",
     "validate:assets": "node scripts/validate-assets.mjs",
-    "test": "npm run test:content && npm run test:sites && node --test tests/site-routes.test.mjs && node --test tests/navigation-preview.test.mjs && node --test tests/scroll-video.test.mjs",
+    "test": "npm run test:content && npm run test:sites && node --test tests/site-routes.test.mjs && node --test tests/navigation-preview.test.mjs && node --test tests/scroll-video.test.mjs tests/scroll-sequence.test.mjs tests/service-reflow.test.mjs",
+    "media:scroll": "node scripts/generate-scroll-sequences.mjs",
     "media:responsive": "node scripts/generate-responsive-images.mjs"
   },
   "dependencies": {

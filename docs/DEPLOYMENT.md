@@ -1,4 +1,49 @@
-# Client preview — refreshed 29 September 2026
+# Client preview — latest refinement release, 30 September 2026
+
+Live URL: https://bold-ideas-client-preview.twenntyonee.chatgpt.site
+
+The user explicitly requested publishing the completed refinements to the existing preview, followed by uploading the full working project to https://github.com/veevoy/Bold-Ideas-Web. The existing public audience was preserved. This release adds equal compact navigation gaps, the smaller BoldLeads logo and controlled disclosure, a single offer divider, smooth homepage service-deck transitions and native CSS case-hero parallax. It retains all version 7 mobile frame sequences, content and media updates.
+
+## Current published identity
+
+- Site: `appgprj_6ab635feab94819199180c35e62adf7e`
+- Saved version: `appgprj_6ab635feab94819199180c35e62adf7e~appgver_0d926a3488908191816c6413c325a1ba` (version 8)
+- Source commit: `248f0176dcea4ae768261801f9943ddec8d2f1e7`
+- Deployment: `appgdep_6abcdc6857688191953d669b43cce7dc`
+- Native status: `succeeded`, 2026-09-30 09:55:10 UTC.
+- Source checkout: `../handoff/client-preview-site/`
+- Uploaded archive: `../handoff/bold-ideas-client-preview-2026-09-30-refined-sites.tar.gz`
+- Archive SHA-256: `a351c28a876f2617c54ad35f4f6bcab6388f1240f54991c19f0c607317f53704` (242 files, 165,304,320 bytes).
+
+The source synchronisation byte-checked 322 project files while preserving the isolated hosting adapters and original 4K media. TypeScript, 48 application tests, 13 additional hosting/media tests, the production build and four-case/211-asset validators passed. Native archive saving and publication both succeeded. Physical iPhone Safari frame pacing remains unverified; the prior browser viewport checks are documented in VERIFICATION.md.
+
+The GitHub destination is the explicitly requested `veevoy/Bold-Ideas-Web` repository, initially empty with admin access confirmed. It receives the regular source tree, original media and Git history; generated builds, local handoff archives and credentials stay excluded. Future publication still needs another explicit request.
+
+---
+
+# Earlier release — version 7, 30 September 2026
+
+Live URL: https://bold-ideas-client-preview.twenntyonee.chatgpt.site
+
+The user explicitly requested publication of the complete current version to the same preview domain on 30 September 2026. This release includes the compact BoldLeads offer with supplied SVG, smaller audience bottom spacing, smooth navigation alignment, and the preceding local mobile frame sequences, testimonials spacing, CBA logo and footer attribution changes. The existing public audience was preserved. GitHub was not pushed during this release. Future publication still requires another explicit user request.
+
+## Version 7 published identity
+
+- Site: `appgprj_6ab635feab94819199180c35e62adf7e`
+- Saved version: `appgprj_6ab635feab94819199180c35e62adf7e~appgver_4c2090be87448191941a444246b596a9` (version 7)
+- Source commit: `31da305b5a6428160fd05fba16cbf2c2859c8863`
+- Deployment: `appgdep_6abccf5a84b8819184f76e5dfca8f6ba`
+- Native status: `succeeded`, 2026-09-30 09:00:56 UTC.
+- Source checkout: `../handoff/client-preview-site/`
+- Local archive retained: `../handoff/bold-ideas-client-preview-2026-09-30-sites.tar.gz`
+
+The local archive passed packaging validation but its native upload failed twice with a serialization error. Version listing confirmed neither attempt saved a new version. The same pushed commit was then saved as version 7 without an archive and built remotely by Sites; native publication succeeded. The local archive was not used for this deployment. Hosting range adapters and original media hashes remain unchanged. Mobile/touch scroll presentation now uses the WebP canvas sequences; desktop retains native 4K video.
+
+Validation passed: TypeScript, 44 application tests plus 13 hosting/media tests, production build, four published case studies and 211 public media assets. Local visual checks covered desktop/mobile layout and both directions of the navigation transition. Physical iPhone Safari verification of the earlier animation fix is still outstanding; no physical-device success is claimed.
+
+---
+
+## Previous release — 29 September 2026
 
 Live URL: https://bold-ideas-client-preview.twenntyonee.chatgpt.site
 

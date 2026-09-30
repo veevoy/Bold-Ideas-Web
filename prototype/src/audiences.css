@@ -1,5 +1,5 @@
 .audience-section { position: relative; height: 260svh; background: var(--ink); color: var(--paper); }
-.audience-stage { position: sticky; top: 0; height: 100svh; min-height: 600px; display: flex; flex-direction: column; justify-content: center; padding-block: clamp(116px, 12svh, 160px) clamp(48px, 7svh, 88px); overflow: clip; isolation: isolate; }
+.audience-stage { position: sticky; top: 0; height: 100svh; min-height: 600px; display: flex; flex-direction: column; justify-content: center; padding-block: clamp(116px, 12svh, 160px) clamp(20px, 3svh, 36px); overflow: clip; isolation: isolate; }
 .audience-backdrops, .audience-film, .audience-film img, .audience-film video { position: absolute; inset: 0; width: 100%; height: 100%; }
 .audience-backdrops { z-index: -2; pointer-events: none; background: var(--ink); }
 .audience-film { opacity: 0; transition: opacity .7s ease; }

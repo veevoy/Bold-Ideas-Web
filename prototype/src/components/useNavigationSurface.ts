@@ -9,6 +9,23 @@ export function useNavigationSurface(variant: NavigationVariant, home: boolean) 
   const header = useRef<HTMLElement>(null);
   const [state, setState] = useState({ dark: home, expanded: home });
   useLayoutEffect(() => {
+    const element = header.current;
+    const links = element?.querySelector<HTMLElement>('.desktop-nav');
+    const booking = element?.querySelector<HTMLElement>('.nav-booking');
+    if (!element || !links || !booking) return;
+    // Fit the compact shell to the actual font metrics, leaving two equal gaps.
+    // Only observe fixed-size actions, never the animating shell or logo.
+    const measure = () => {
+      if (!links.getClientRects().length) return;
+      element.style.setProperty('--nav-actions-width', `${links.getBoundingClientRect().width + booking.getBoundingClientRect().width}px`);
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(links);
+    observer.observe(booking);
+    return () => observer.disconnect();
+  }, []);
+  useLayoutEffect(() => {
     let frame = 0;
     let disposed = false;
     let lastGround = '';

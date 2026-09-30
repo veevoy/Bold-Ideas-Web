@@ -15,7 +15,9 @@
 /* Fit the actual frame, not a letterboxed video box: the mask then softens
    the source's clipped sides at every viewport and doesn't miss the edges.
    The 4K source also has a dark bottom scanline; feather it into the paper. */
-.bold-story-media video { display: block; width: min(100cqw, calc(100cqh * 16 / 9)); height: auto; aspect-ratio: 16 / 9; mix-blend-mode: darken; mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent), linear-gradient(180deg, transparent, #000 2%, #000 98%, transparent calc(100% - 2px)); mask-composite: intersect; }
+.bold-story-media video, .bold-story-media .scroll-frame-sequence { display: block; width: min(100cqw, calc(100cqh * 16 / 9)); height: auto; aspect-ratio: 16 / 9; mix-blend-mode: darken; mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent), linear-gradient(180deg, transparent, #000 2%, #000 98%, transparent calc(100% - 2px)); mask-composite: intersect; }
+.scroll-frame-sequence { position: relative; aspect-ratio: 16 / 9; }
+.scroll-frame-sequence > img, .scroll-frame-sequence > canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
 .bold-story-note { display: grid; grid-row: 1; align-self: end; }
 .bold-story-note-0 { grid-column: 1; }
 .bold-story-note-1 { grid-column: 3; }

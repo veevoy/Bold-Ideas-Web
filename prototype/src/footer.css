@@ -21,6 +21,7 @@
 .footer-contact .primary-link { font-size: 15px; }
 .footer-contact > p { color: var(--muted); font-size: 13px; line-height: 1.5; margin-top: 15px; max-width: 34ch; }
 .footer-studio { min-width: 0; }
+.footer-company { font-size: 17px; line-height: 1.5; margin-bottom: 22px; }
 .footer-studio address { font-size: 17px; font-style: normal; line-height: 1.6; }
 .footer-utility { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px 24px; padding-block: 20px; border-top: 1px solid var(--line); font-size: 13px; }
 .footer-utility nav, .footer-utility > div { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 28px; }

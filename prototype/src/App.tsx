@@ -88,7 +88,7 @@ function OpticalHome() {
   const scrollTimer = useRef<ReturnType<typeof window.setTimeout> | undefined>(undefined);
   useEffect(() => { reducedRef.current = reduced; }, [reduced]);
   const revealService = useCallback((id: string) => {
-    if (!services.some(service => service.id === id)) return;
+    if (id !== 'bold-leads' && !services.some(service => service.id === id)) return;
     setActiveServiceId(id);
     setOpenServices(current => new Set([...current, id]));
     window.clearTimeout(scrollTimer.current);

@@ -6,6 +6,8 @@ import { Disclosure } from './Disclosure';
 import { useSiteMotion } from './SiteMotion';
 import { TextReveal } from './TextReveal';
 import { BrandList } from './BrandList';
+import { BoldLeadsPackage } from './BoldLeadsPackage';
+import { animateServiceReflow } from '../service-reflow';
 
 export type ServiceFinderProps = {
   openServices: Set<string>;
@@ -67,7 +69,7 @@ function NeedCard({ need, index, anchor, nextAnchor, openServices, onServiceTogg
   const { scrollYProgress } = useScroll({ target: nextAnchor || anchor, offset: ['start end', 'start start'] });
   const scale = useTransform(scrollYProgress, [.12, .9], [1, .955]);
   const copy = needCopy[need.id];
-  const expanded = need.services.some(service => openServices.has(service.id));
+  const expanded = need.services.some(service => openServices.has(service.id)) || (need.id === 'ai' && openServices.has('bold-leads'));
 
   useLayoutEffect(() => {
     const card = cardRef.current;
@@ -99,7 +101,7 @@ function NeedCard({ need, index, anchor, nextAnchor, openServices, onServiceTogg
     style={{ '--stack-index': index } as CSSProperties}
     aria-labelledby={`need-${need.id}-title`} onFocusCapture={exposeKeyboardFocus}
   >
-    <motion.div ref={surfaceRef} className="need-card__surface" style={{ scale: reduced || !nextAnchor || reading ? 1 : scale }}>
+    <div className="need-card__transition"><motion.div ref={surfaceRef} className="need-card__surface" style={{ scale: reduced || !nextAnchor || reading ? 1 : scale }}>
       <div className="need-card__lead">
         <TextReveal as="h3" id={`need-${need.id}-title`} lines={copy.lines} className="need-card__title" />
         <p className="need-card__description">{copy.body}</p>
@@ -119,21 +121,29 @@ function NeedCard({ need, index, anchor, nextAnchor, openServices, onServiceTogg
             </span>}
           ><ServiceScope service={service} /></Disclosure>;
         })}
+        {need.id === 'ai' && <BoldLeadsPackage open={openServices.has('bold-leads')} onOpenChange={open => onServiceToggle('bold-leads', open)} onExitComplete={() => onServiceExit('bold-leads')} />}
         {need.id === 'finish' && <p className="package-qualification">Diagnosis and audit fees cover those stages. Further implementation is agreed separately.</p>}
       </div>
-    </motion.div>
+    </motion.div></div>
   </article>;
 }
 
 export function ServiceFinder({ openServices, onServiceToggle, activeServiceId }: ServiceFinderProps) {
+  const { reduced } = useSiteMotion();
+  const deck = useRef<HTMLDivElement>(null);
   const anchors = useMemo(() => needs.map(() => createRef<HTMLDivElement>()), []);
   const [closingServices, setClosingServices] = useState<Set<string>>(new Set());
   const reading = openServices.size > 0 || closingServices.size > 0;
   const pendingPosition = useRef<{ id: string; top: number } | null>(null);
+  const pendingPoses = useRef(new Map<HTMLElement, DOMRect>());
+  const previousReading = useRef(reading);
+  const cancelReflow = useRef<(() => void) | null>(null);
 
   function rememberTrigger(id: string) {
     const trigger = document.getElementById(`${id}-trigger`);
     if (trigger) pendingPosition.current = { id, top: trigger.getBoundingClientRect().top };
+    pendingPoses.current = new Map(Array.from(deck.current?.querySelectorAll<HTMLElement>('.need-card__transition') ?? [])
+      .map(element => [element, element.firstElementChild!.getBoundingClientRect()]));
   }
 
   function toggleService(id: string, open: boolean) {
@@ -161,14 +171,29 @@ export function ServiceFinder({ openServices, onServiceToggle, activeServiceId }
   useLayoutEffect(() => {
     const position = pendingPosition.current;
     pendingPosition.current = null;
-    if (!position) return;
-    const trigger = document.getElementById(`${position.id}-trigger`);
-    if (trigger) window.scrollBy({ top: trigger.getBoundingClientRect().top - position.top, behavior: 'instant' });
-  }, [openServices, reading, closingServices]);
+    const layoutChanged = previousReading.current !== reading;
+    // A quick reversal can overlap the prior transition: measure the destination
+    // without its temporary transform, while retaining the captured visible pose.
+    if (layoutChanged) cancelReflow.current?.();
+    if (position) {
+      const trigger = document.getElementById(`${position.id}-trigger`);
+      if (trigger) window.scrollBy({ top: trigger.getBoundingClientRect().top - position.top, behavior: 'instant' });
+    }
+    if (layoutChanged) {
+      cancelReflow.current = animateServiceReflow(pendingPoses.current, reduced, window.innerHeight);
+      previousReading.current = reading;
+    }
+    pendingPoses.current.clear();
+  }, [openServices, reading, closingServices, reduced]);
+
+  useEffect(() => {
+    if (reduced) cancelReflow.current?.();
+    return () => cancelReflow.current?.();
+  }, [reduced]);
 
   useEffect(() => {
     if (!activeServiceId) return;
-    const index = needs.findIndex(need => need.services.some(service => service.id === activeServiceId));
+    const index = needs.findIndex(need => need.services.some(service => service.id === activeServiceId) || (need.id === 'ai' && activeServiceId === 'bold-leads'));
     if (index !== -1) visitCard(anchors[index], true);
   }, [activeServiceId, anchors]);
 
@@ -182,7 +207,7 @@ export function ServiceFinder({ openServices, onServiceToggle, activeServiceId }
     return () => window.removeEventListener('hashchange', followNeedHash);
   }, [anchors]);
 
-  return <div className={`service-stack${reading ? ' service-stack--reading' : ''}`}>
+  return <div ref={deck} className={`service-stack${reading ? ' service-stack--reading' : ''}`}>
     <div className="service-stack__deck">
       {needs.map((need, index) => <Fragment key={need.id}>
         <div ref={anchors[index]} className="service-stack__anchor" aria-hidden="true" />

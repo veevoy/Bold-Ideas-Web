@@ -24,7 +24,7 @@ export function SiteFooter({ homePrefix = '' }: { homePrefix?: string }) {
             <a href="/case-studies">Case studies</a><a href="/services">Services</a><a href={`${homePrefix}#about`}>About</a><a href="/testimonials">Testimonials</a>
           </nav>
           <div className="footer-studio">
-            <h2>Studio</h2>
+            <p className="footer-company">Bold Ideas Consulting is the brand of the Inspiring Visionaries Studio, s.r.o.</p>
             <address>Korunní 2569/108, Vinohrady<br />101 00 Prague 10<br />Czech Republic</address>
           </div>
           <div className="footer-contact"><h2>Let’s talk.</h2><a className="footer-email" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a><a className="primary-link" href={BOOKING_URL}>Book Strategy Session<ArrowUpRight size={18} strokeWidth={1.6} aria-hidden="true" /></a><p>A 30-min complimentary strategic session.</p></div>
